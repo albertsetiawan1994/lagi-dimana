@@ -1,0 +1,3268 @@
+<!-- Design System -->
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#d8eaff",
+                    "primary-container": "#00baff",
+                    "on-tertiary-fixed-variant": "#296e56",
+                    "primary-dim": "#005578",
+                    "on-secondary-container": "#5b4400",
+                    "error": "#b31b25",
+                    "secondary-fixed": "#f9cc61",
+                    "on-error": "#ffefee",
+                    "on-tertiary-container": "#1c644c",
+                    "on-tertiary-fixed": "#00513b",
+                    "error-dim": "#9f0519",
+                    "surface-variant": "#c2e0ff",
+                    "inverse-surface": "#000f1d",
+                    "tertiary-fixed": "#b6fddd",
+                    "tertiary-dim": "#0e5b43",
+                    "tertiary-container": "#b6fddd",
+                    "on-primary-fixed-variant": "#003c55",
+                    "secondary-fixed-dim": "#eabe55",
+                    "surface-container-highest": "#c2e0ff",
+                    "on-primary": "#e8f4ff",
+                    "surface-container-high": "#cde5ff",
+                    "tertiary-fixed-dim": "#a8eecf",
+                    "secondary": "#745700",
+                    "on-primary-container": "#003248",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#570008",
+                    "on-background": "#08314d",
+                    "surface-dim": "#b2d8ff",
+                    "surface-tint": "#006289",
+                    "surface": "#f2f7ff",
+                    "secondary-container": "#f9cc61",
+                    "inverse-primary": "#00baff",
+                    "background": "#f2f7ff",
+                    "primary-fixed-dim": "#00abeb",
+                    "inverse-on-surface": "#7fa0c1",
+                    "surface-bright": "#f2f7ff",
+                    "tertiary": "#20674f",
+                    "on-secondary": "#fff1da",
+                    "on-primary-fixed": "#001723",
+                    "outline": "#587a99",
+                    "secondary-dim": "#664c00",
+                    "on-surface-variant": "#3d5f7c",
+                    "primary": "#006289",
+                    "surface-container-low": "#e8f2ff",
+                    "error-container": "#fb5151",
+                    "on-secondary-fixed-variant": "#674d00",
+                    "outline-variant": "#8fb1d2",
+                    "on-secondary-fixed": "#443100",
+                    "primary-fixed": "#00baff",
+                    "on-surface": "#08314d",
+                    "on-tertiary": "#c7ffe5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .soft-gradient-bg {
+            background: linear-gradient(180deg, #f2f7ff 0%, #d8eaff 100%);
+        }
+        .tactile-shadow {
+            box-shadow: 0 20px 40px -10px rgba(8, 49, 77, 0.08);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-background min-h-screen flex flex-col items-center justify-center p-6 overflow-x-hidden">
+<div class="w-full max-w-md space-y-10 relative">
+<!-- Floating Illustration Elements (Decorative for Children) -->
+<div class="absolute -top-12 -left-8 w-24 h-24 opacity-20 pointer-events-none">
+<img class="w-full h-full object-contain" data-alt="cute cartoon character with a blue hat smiling and waving in a friendly illustrative style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5f2Gw-5OPwef5z4GeAxEE-v4K55jpYOUC3Lk4_BYNWVPHUH6Q9uPuyChUw17rni66EqgOw68fzR0bNVUPopvwr05eUdK5W87FlBq8lDzcxEBv3iFdm9PF3mBsD-kvC-G-Mqrrj5hhjHEh8BHxkuyAXUq8OBzpNewsP8vSjUvo4iX8HnDfNxtFqP4HApRF8zLAto8tk8t4JNLr5yFvjZPw48B3zlp_UkUZODvcUa8vEIQfO2U-V9XuHxmZJHD3rNJdhxWJv8c6U_Q"/>
+</div>
+<div class="absolute -top-4 -right-4 w-16 h-16 opacity-10 pointer-events-none rotate-12">
+<span class="material-symbols-outlined text-secondary text-6xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<!-- Header Section -->
+<div class="text-center space-y-4">
+<h1 class="text-4xl font-black text-primary tracking-tight">Lagi Dimana</h1>
+<p class="text-lg text-on-surface-variant font-medium px-4">
+                Menjaga keluarga tetap dekat, kemanapun mereka melangkah.
+            </p>
+</div>
+<!-- Login Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 tactile-shadow space-y-8">
+<!-- Google Login Button -->
+<button class="w-full flex items-center justify-center gap-4 bg-white border border-outline-variant/30 py-5 rounded-lg active:scale-95 transition-transform duration-200">
+<svg class="w-7 h-7" viewbox="0 0 48 48">
+<path d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z" fill="#EA4335"></path>
+<path d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z" fill="#4285F4"></path>
+<path d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z" fill="#FBBC05"></path>
+<path d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" fill="#34A853"></path>
+</svg>
+<span class="text-xl font-bold text-on-surface">Masuk dengan Google</span>
+</button>
+<!-- Divider -->
+<div class="flex items-center gap-4 py-2">
+<div class="h-px flex-1 bg-outline-variant/20"></div>
+<span class="text-on-surface-variant font-semibold text-sm">ATAU</span>
+<div class="h-px flex-1 bg-outline-variant/20"></div>
+</div>
+<!-- Email Login Section -->
+<div class="space-y-6">
+<div class="space-y-2">
+<label class="text-on-surface font-bold text-lg px-1">Email</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">mail</span>
+<input class="w-full bg-surface-container-low border-none rounded-lg py-5 pl-12 pr-6 text-lg focus:ring-4 focus:ring-primary-container/20 transition-all placeholder:text-on-surface-variant/40" placeholder="contoh@email.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-on-surface font-bold text-lg px-1">Kata Sandi</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">lock</span>
+<input class="w-full bg-surface-container-low border-none rounded-lg py-5 pl-12 pr-6 text-lg focus:ring-4 focus:ring-primary-container/20 transition-all placeholder:text-on-surface-variant/40" placeholder="••••••••" type="password"/>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 rounded-lg text-xl font-bold tactile-shadow active:scale-95 transition-all duration-200">
+                    Masuk Sekarang
+                </button>
+</div>
+</div>
+<!-- Footer Help -->
+<div class="text-center space-y-4">
+<p class="text-on-surface-variant font-medium">
+                Belum punya akun? <a class="text-primary font-bold hover:underline" href="#">Daftar Gratis</a>
+</p>
+<div class="pt-4 flex flex-col items-center gap-6">
+<div class="flex items-center gap-2 px-4 py-2 bg-tertiary-container/30 rounded-full">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">security</span>
+<span class="text-tertiary font-bold text-sm tracking-wide">Privasi Anda Terjamin</span>
+</div>
+<!-- Simple Large Illustration for Bottom (Kids friendly) -->
+<div class="w-full h-32 relative">
+<img class="w-full h-full object-contain" data-alt="vibrant flat vector illustration of a happy diverse family walking together in a safe green park with soft pastel colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXNwJzY_7y8tUqAWgSezCmAmRUBAY2vWPd5fijhsWcYk674RzC98cKQMx3KFxjX7XAEQ3SxKS4C8vWykdlhZ8q1UUxBbintqvtzbu2Rs1oZ-k08kaOXtVEpbqw4jVYB7GHe40ljaGnBMndnnDK7jo_iay4n9QLS2XqyRFpaIezoZ6mJT-NS2OkErHkcEMNYmfZfGFALrre3zyiEit-Kx2D32nOM-S0KDK6nkuYjt0oQgj1CaVZ6DuWd5Dl3cIdC9H1h6v1CIh1gAI"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Corner Blooms -->
+<div class="fixed bottom-0 left-0 w-32 h-32 -z-10 translate-y-8 -translate-x-8">
+<div class="w-full h-full bg-secondary-container opacity-20 blur-3xl rounded-full"></div>
+</div>
+<div class="fixed top-0 right-0 w-48 h-48 -z-10 -translate-y-12 translate-x-12">
+<div class="w-full h-full bg-primary-container opacity-15 blur-3xl rounded-full"></div>
+</div>
+</body></html>
+
+<!-- Halaman Login -->
+<html><head><meta charset="utf-8"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-container": "#d8eaff",
+                "primary-container": "#00baff",
+                "on-tertiary-fixed-variant": "#296e56",
+                "primary-dim": "#005578",
+                "on-secondary-container": "#5b4400",
+                "error": "#b31b25",
+                "secondary-fixed": "#f9cc61",
+                "on-error": "#ffefee",
+                "on-tertiary-container": "#1c644c",
+                "on-tertiary-fixed": "#00513b",
+                "error-dim": "#9f0519",
+                "surface-variant": "#c2e0ff",
+                "inverse-surface": "#000f1d",
+                "tertiary-fixed": "#b6fddd",
+                "tertiary-dim": "#0e5b43",
+                "tertiary-container": "#b6fddd",
+                "on-primary-fixed-variant": "#003c55",
+                "secondary-fixed-dim": "#eabe55",
+                "surface-container-highest": "#c2e0ff",
+                "on-primary": "#e8f4ff",
+                "surface-container-high": "#cde5ff",
+                "tertiary-fixed-dim": "#a8eecf",
+                "secondary": "#745700",
+                "on-primary-container": "#003248",
+                "surface-container-lowest": "#ffffff",
+                "on-error-container": "#570008",
+                "on-background": "#08314d",
+                "surface-dim": "#b2d8ff",
+                "surface-tint": "#006289",
+                "surface": "#f2f7ff",
+                "secondary-container": "#f9cc61",
+                "inverse-primary": "#00baff",
+                "background": "#f2f7ff",
+                "primary-fixed-dim": "#00abeb",
+                "inverse-on-surface": "#7fa0c1",
+                "surface-bright": "#f2f7ff",
+                "tertiary": "#20674f",
+                "on-secondary": "#fff1da",
+                "on-primary-fixed": "#001723",
+                "outline": "#587a99",
+                "secondary-dim": "#664c00",
+                "on-surface-variant": "#3d5f7c",
+                "primary": "#006289",
+                "surface-container-low": "#e8f2ff",
+                "error-container": "#fb5151",
+                "on-secondary-fixed-variant": "#674d00",
+                "outline-variant": "#8fb1d2",
+                "on-secondary-fixed": "#443100",
+                "primary-fixed": "#00baff",
+                "on-surface": "#08314d",
+                "on-tertiary": "#c7ffe5"
+        },
+        "borderRadius": {
+                "DEFAULT": "1rem",
+                "lg": "2rem",
+                "xl": "3rem",
+                "full": "9999px"
+        },
+        "fontFamily": {
+                "headline": ["Plus Jakarta Sans"],
+                "body": ["Plus Jakarta Sans"],
+                "label": ["Plus Jakarta Sans"]
+        }
+      },
+    },
+  }
+</script>
+<style>
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  .glass-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface min-h-screen flex flex-col items-center justify-between selection:bg-primary-container overflow-hidden">
+<!-- Content Canvas: Focused Transactional/Splash Intent (Suppresses Shared Nav Shell) -->
+<main class="flex-1 w-full max-w-md mx-auto flex flex-col items-center justify-center p-8 relative">
+<!-- Decorative Abstract Elements (Editorial Layout) -->
+<div class="absolute top-[-10%] left-[-10%] w-64 h-64 bg-secondary-fixed/20 rounded-full blur-3xl"></div>
+<div class="absolute bottom-[-5%] right-[-5%] w-80 h-80 bg-tertiary-fixed/30 rounded-full blur-3xl"></div>
+<!-- Logo Section -->
+<div class="z-10 flex flex-col items-center space-y-6">
+<div class="relative">
+<!-- Floating Cloud Icon -->
+<div class="bg-white p-6 rounded-xl shadow-[0_20px_50px_rgba(0,186,255,0.15)] flex items-center justify-center">
+<span class="material-symbols-outlined text-[80px] text-primary" data-icon="cloud">cloud</span>
+<!-- Cheery Smile Overlay (Conceptual Design) -->
+<div class="absolute inset-0 flex items-center justify-center pt-4">
+<div class="w-10 h-2 border-b-4 border-primary/40 rounded-full"></div>
+</div>
+</div>
+<!-- Decorative Sparkles -->
+<span class="material-symbols-outlined absolute -top-4 -right-4 text-secondary-fixed text-4xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div class="text-center">
+<h1 class="text-4xl font-black text-primary tracking-tight">Lagi Dimana</h1>
+<p class="text-on-surface-variant font-medium mt-2">Selalu Terhubung, Selalu Aman</p>
+</div>
+</div>
+<!-- Mascot Illustration Placeholder (High-End Card) -->
+<div class="mt-12 z-10 w-full glass-card rounded-xl p-6 flex flex-col items-center">
+<div class="w-56 h-56 rounded-full bg-surface-container-high flex items-center justify-center relative overflow-hidden group">
+<img alt="Mascot holding compass" class="w-full h-full object-cover mix-blend-multiply opacity-80" data-alt="A cute friendly 3D cartoon character mascot in bright blue and yellow colors holding a classic gold compass, smiling warmly in a sunny soft-focus park background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAibbEvd_wCpvsNSdPFzT4zaWlu20r4pBkuxuxYxrPu_ONdrjNcF0UxxmLJdufCVK4JUnbctOy52tepaH3AZkHFkfN41RmXvEW3TqoBh2ApsNc5o3WJsspqO7Jn82BVRT2R6vIGn4aMkJ5cVafK73rE618oHbGV4Dd90uVxeTTeUfDwrBHWlWwGhk6_7BKSavRW4sZKa8evTWOdPIdAaHHpRpFM8XBRend4gsw0hSAg4RxEmRvEkA5SKCwlG6vfS24xk_dbUSSzGEI"/>
+<!-- Overlaying the "Compass" Icon for Tactile Softness -->
+<div class="absolute bottom-6 right-6 bg-secondary-fixed text-on-secondary-fixed p-4 rounded-full shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-3xl" data-icon="explore" style="font-variation-settings: 'FILL' 1;">explore</span>
+</div>
+</div>
+</div>
+<!-- Warm Welcome Text -->
+<div class="mt-12 text-center z-10 px-4">
+<h2 class="text-2xl font-bold text-on-surface mb-3">Halo, Ayah dan Bunda!</h2>
+<p class="text-on-surface-variant leading-relaxed">
+        Petualangan si kecil jadi lebih tenang. Yuk, mulai pantau keberadaan keluarga tersayang dengan satu sentuhan mudah.
+      </p>
+</div>
+<!-- Primary Action Button -->
+<div class="mt-12 w-full z-10 px-4">
+<button class="w-full bg-primary text-on-primary py-5 rounded-xl font-bold text-lg shadow-[0_8px_25px_rgba(0,98,137,0.3)] active:scale-95 transition-all duration-200 flex items-center justify-center gap-3">
+        Mulai Menjelajah
+        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- Footer Branding -->
+<footer class="pb-10 pt-4 z-10">
+<div class="flex items-center gap-2 opacity-40">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="text-xs font-bold text-on-surface uppercase tracking-widest">The Playful Guardian</span>
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+</div>
+</footer>
+<!-- Background Decorative Shapes (Editorial Flow) -->
+<div class="fixed top-[15%] right-[-5%] w-48 h-48 bg-primary-fixed/10 rounded-full blur-2xl -z-10"></div>
+<div class="fixed bottom-[20%] left-[-10%] w-64 h-64 bg-tertiary-fixed/20 rounded-[4rem] rotate-12 -z-10"></div>
+</body></html>
+
+<!-- Splash Screen -->
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lagi Dimana - Halaman Utama</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#d8eaff",
+                    "primary-container": "#00baff",
+                    "on-tertiary-fixed-variant": "#296e56",
+                    "primary-dim": "#005578",
+                    "on-secondary-container": "#5b4400",
+                    "error": "#b31b25",
+                    "secondary-fixed": "#f9cc61",
+                    "on-error": "#ffefee",
+                    "on-tertiary-container": "#1c644c",
+                    "on-tertiary-fixed": "#00513b",
+                    "error-dim": "#9f0519",
+                    "surface-variant": "#c2e0ff",
+                    "inverse-surface": "#000f1d",
+                    "tertiary-fixed": "#b6fddd",
+                    "tertiary-dim": "#0e5b43",
+                    "tertiary-container": "#b6fddd",
+                    "on-primary-fixed-variant": "#003c55",
+                    "secondary-fixed-dim": "#eabe55",
+                    "surface-container-highest": "#c2e0ff",
+                    "on-primary": "#e8f4ff",
+                    "surface-container-high": "#cde5ff",
+                    "tertiary-fixed-dim": "#a8eecf",
+                    "secondary": "#745700",
+                    "on-primary-container": "#003248",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#570008",
+                    "on-background": "#08314d",
+                    "surface-dim": "#b2d8ff",
+                    "surface-tint": "#006289",
+                    "surface": "#f2f7ff",
+                    "secondary-container": "#f9cc61",
+                    "inverse-primary": "#00baff",
+                    "background": "#f2f7ff",
+                    "primary-fixed-dim": "#00abeb",
+                    "inverse-on-surface": "#7fa0c1",
+                    "surface-bright": "#f2f7ff",
+                    "tertiary": "#20674f",
+                    "on-secondary": "#fff1da",
+                    "on-primary-fixed": "#001723",
+                    "outline": "#587a99",
+                    "secondary-dim": "#664c00",
+                    "on-surface-variant": "#3d5f7c",
+                    "primary": "#006289",
+                    "surface-container-low": "#e8f2ff",
+                    "error-container": "#fb5151",
+                    "on-secondary-fixed-variant": "#674d00",
+                    "outline-variant": "#8fb1d2",
+                    "on-secondary-fixed": "#443100",
+                    "primary-fixed": "#00baff",
+                    "on-surface": "#08314d",
+                    "on-tertiary": "#c7ffe5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>body {
+    font-family: "Plus Jakarta Sans", sans-serif
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+.map-canvas {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCN44SBKqiACEpW0dQz6MUe4Pe8EBBQ9X-jl-NlgnaberSw4iN4jsESyF9sjdSBwUOFEnJwaQz-apnQlHtOdei60lEwGgziJlovaiHlX2Mc5j49I2w0Nq5Hy2EqIYTGwrL-7HdlJ0f7Sn6gM6GjsisrtHGbEb_e85UraUTXl7N8GF-COaM3wpBhDQG1r13spmzDVaJmP6wtt7dRCjzjMoc5L0IswYFbuqLNnSjIzjHO57kC2WswGDStpoDaq5ACqZkZD7XIMGG7yTc);
+    background-size: cover;
+    background-position: center
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen overflow-hidden">
+<!-- TopAppBar Container -->
+<header class="fixed top-0 w-full z-50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full border-2 border-primary-container overflow-hidden bg-surface-container-high shadow-sm">
+<img alt="Profil Pengguna" class="w-full h-full object-cover" data-alt="cute animated 3d avatar of a friendly grandfather with white hair and glasses smiling warmly, soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZyX6jlZx9Aq_DixE2ZdLxDQUNaapQ0q33DhuROAMs_9tJqiL6xLymBNycxAVbNk0WjCKFGL48SG1yYs7o97jhyAdmMuKk7Q3uICDkyWqJ3ftxIHMy-F1sW3H4AqYGBb591WN5t1VvNHPJ3AvZchQkficYCBoe57sUmSS3SFt5pZu_NNUERMSgxdjuqqt63izFCj0E8LwGzbMODOZP4UqcLjr3ublUYTeyCDObQb-3CzNPxBh7sZmx0YaL35R8e2FUvXtvXT829Bg"/>
+</div>
+<h1 class="font-plus-jakarta-sans text-lg font-bold text-sky-600 dark:text-sky-400 tracking-tight">Lagi Dimana</h1>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-low text-sky-500 hover:opacity-80 active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</header>
+<!-- Main Canvas: Map View -->
+<main class="relative h-screen w-full map-canvas" data-location="Jakarta, Indonesia">
+<!-- Search and Filter Pills (Floating UI) -->
+<div class="absolute top-24 left-1/2 -translate-x-1/2 w-[90%] max-w-md z-40">
+<div class="bg-white/80 backdrop-blur-xl rounded-xl p-2 shadow-[0_8px_30px_rgba(0,0,0,0.06)] flex items-center gap-2">
+<div class="flex-1 flex items-center px-3 gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="search">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm font-medium w-full text-on-surface-variant" placeholder="Cari anggota atau lokasi..." type="text"/>
+</div>
+<div class="h-8 w-[1px] bg-outline-variant/20"></div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg text-xs font-bold hover:opacity-90 active:scale-95 transition-all">
+                    Filter
+                </button>
+</div>
+</div>
+<!-- Family Char-Pins (The Avatars) -->
+<!-- Pin 1: Adik -->
+<div class="absolute top-[35%] left-[25%] flex flex-col items-center group cursor-pointer">
+<div class="relative">
+<div class="w-14 h-14 rounded-full border-[4px] border-secondary-container p-1 bg-white shadow-xl group-hover:scale-110 transition-transform duration-300">
+<img alt="Adik" class="w-full h-full rounded-full object-cover" data-alt="cute 3d character illustration of a small boy with messy brown hair and a bright yellow shirt, smiling playfully" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD4JjU9e1-_bdkDUrxgcnQL7E_CcbWrpfz6FhpLSaT6mRp8SwmTozou76nerapV2EX0_HVwznuji1f0n6-A6pdruvT-q7YFSQ99Yq7YcI_ndMu3edUU92vFUwqmHbhM_O1co8GFoW84X5ORgAUCFXDQFWyZv886GC_ZSJLMDUOqywG5L7hinlhl2iD7z-dc91qGSk-z_wXGYXijN5GFlmGEH3mHWlHMFGhwFZnyAjoZsbOns7YCo41A-lzjXl4376xDDhvSdGqu_k"/>
+</div>
+<div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-4 h-4 bg-secondary-container rotate-45 -z-10"></div>
+</div>
+<span class="mt-2 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-[10px] font-bold text-secondary shadow-sm">Adik (Sekolah)</span>
+</div>
+<!-- Pin 2: Kakak -->
+<div class="absolute top-[55%] right-[20%] flex flex-col items-center group cursor-pointer">
+<div class="relative">
+<div class="w-14 h-14 rounded-full border-[4px] border-tertiary-container p-1 bg-white shadow-xl group-hover:scale-110 transition-transform duration-300">
+<img alt="Kakak" class="w-full h-full rounded-full object-cover" data-alt="cute 3d character illustration of a teenage girl with pigtails and a green sweater, looking at a phone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0r-FeUM3yb5_mGmujdUfB2inPIqaocSbTBvlDpzK4q-4f43d6w9d9KHQmeoQSglziqQQEZeWHHXn89xHpBTC_ZsMcK2zWFlM7jUJUCdlb1oayoGO4T1G9QfNcEeHFKJPAHdNZ5nuwSvfU7pNLvaTOd_bzBgxKPbdbuE0AqizFGL2uRNGbefQnJHXy06SyhgZ5GcGwLmAo9MTK4g_NPBqxNxjsWGTXxdlBsFcKCtM4tk6trdpAeHdoArmSYkpLEpQdmHnjyN9TCc4"/>
+</div>
+<div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-4 h-4 bg-tertiary-container rotate-45 -z-10"></div>
+</div>
+<span class="mt-2 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-[10px] font-bold text-tertiary shadow-sm">Kakak (Kafe)</span>
+</div>
+<!-- Pin 3: Ibu -->
+<div class="absolute bottom-[30%] left-[45%] flex flex-col items-center group cursor-pointer">
+<div class="relative">
+<div class="w-16 h-16 rounded-full border-[4px] border-primary-container p-1 bg-white shadow-xl group-hover:scale-110 transition-transform duration-300">
+<img alt="Ibu" class="w-full h-full rounded-full object-cover" data-alt="cute 3d character illustration of a kind motherly woman with a blue hijab and warm smile, soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_RSI2ui8HrtbYKrzQBd51GB6rmxZW2BWRk2PdtxlRNgAKdNm4f9U-pvdCVlQa6TpGcke1JEIMyV1Hnmy-aruj7CQdId9a_kW9AEUkkUnx37VZrU1CHeuUoep1Na4myEdaLvVB2cM5jq5z9U67CVDOfvE2lSM5iFKq___-dDggmJ3B1AueBpVWgFbATWNYBD1VGkO-p9bexaEQaGoIpCByzTC2qqOdGVrq_rvxu_5zUE340BA5sZbhhnXN4dlS7KDOhhVzTGKmPoo"/>
+</div>
+<div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-4 h-4 bg-primary-container rotate-45 -z-10"></div>
+</div>
+<span class="mt-2 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-[10px] font-bold text-primary shadow-sm">Ibu (Supermarket)</span>
+</div>
+<!-- SOS Button: Easy to Reach -->
+<div class="absolute bottom-28 right-6 z-40">
+<button class="w-20 h-20 bg-error-container text-on-error rounded-full shadow-[0_12px_40px_rgba(251,81,81,0.4)] flex flex-col items-center justify-center border-4 border-white active:scale-90 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl leading-none" data-icon="emergency" style="font-variation-settings: 'FILL' 1;">emergency</span>
+<span class="text-[10px] font-black tracking-widest mt-1 uppercase">SOS</span>
+</button>
+</div>
+<!-- Location Status Card (Glassmorphism Bento) -->
+<div class="absolute bottom-32 left-6 right-28 z-40">
+<div class="bg-white/60 backdrop-blur-2xl rounded-lg p-5 shadow-2xl border border-white/30 flex items-center gap-4">
+<div class="w-12 h-12 bg-primary-container/20 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="security">security</span>
+</div>
+<div>
+<h3 class="text-sm font-bold text-on-background">Semua Aman</h3>
+<p class="text-[11px] text-on-surface-variant leading-tight">3 anggota keluarga berada di zona aman hari ini.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar Container -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl rounded-t-[3rem] z-50 shadow-[0_-8px_30px_rgba(0,0,0,0.04)] border-t border-sky-100/20">
+<!-- Peta (Active) -->
+<button class="flex flex-col items-center justify-center bg-sky-100 dark:bg-sky-900/40 text-sky-700 dark:text-sky-300 rounded-[2rem] px-5 py-2 scale-110 active:scale-90 transition-all duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="map" style="font-variation-settings: 'FILL' 1;">map</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold mt-1">Peta</span>
+</button>
+<!-- Chat -->
+<button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400 active:scale-90 transition-all duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold mt-1">Chat</span>
+</button>
+<!-- Anggota -->
+<button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400 active:scale-90 transition-all duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold mt-1">Anggota</span>
+</button>
+<!-- Riwayat -->
+<button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400 active:scale-90 transition-all duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold mt-1">Riwayat</span>
+</button>
+<!-- Profil -->
+<button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400 active:scale-90 transition-all duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold mt-1">Profil</span>
+</button>
+</nav>
+</body></html>
+
+<!-- Peta Keluarga Utama -->
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Daftar Anggota Keluarga - Lagi Dimana</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#d8eaff",
+                    "primary-container": "#00baff",
+                    "on-tertiary-fixed-variant": "#296e56",
+                    "primary-dim": "#005578",
+                    "on-secondary-container": "#5b4400",
+                    "error": "#b31b25",
+                    "secondary-fixed": "#f9cc61",
+                    "on-error": "#ffefee",
+                    "on-tertiary-container": "#1c644c",
+                    "on-tertiary-fixed": "#00513b",
+                    "error-dim": "#9f0519",
+                    "surface-variant": "#c2e0ff",
+                    "inverse-surface": "#000f1d",
+                    "tertiary-fixed": "#b6fddd",
+                    "tertiary-dim": "#0e5b43",
+                    "tertiary-container": "#b6fddd",
+                    "on-primary-fixed-variant": "#003c55",
+                    "secondary-fixed-dim": "#eabe55",
+                    "surface-container-highest": "#c2e0ff",
+                    "on-primary": "#e8f4ff",
+                    "surface-container-high": "#cde5ff",
+                    "tertiary-fixed-dim": "#a8eecf",
+                    "secondary": "#745700",
+                    "on-primary-container": "#003248",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#570008",
+                    "on-background": "#08314d",
+                    "surface-dim": "#b2d8ff",
+                    "surface-tint": "#006289",
+                    "surface": "#f2f7ff",
+                    "secondary-container": "#f9cc61",
+                    "inverse-primary": "#00baff",
+                    "background": "#f2f7ff",
+                    "primary-fixed-dim": "#00abeb",
+                    "inverse-on-surface": "#7fa0c1",
+                    "surface-bright": "#f2f7ff",
+                    "tertiary": "#20674f",
+                    "on-secondary": "#fff1da",
+                    "on-primary-fixed": "#001723",
+                    "outline": "#587a99",
+                    "secondary-dim": "#664c00",
+                    "on-surface-variant": "#3d5f7c",
+                    "primary": "#006289",
+                    "surface-container-low": "#e8f2ff",
+                    "error-container": "#fb5151",
+                    "on-secondary-fixed-variant": "#674d00",
+                    "outline-variant": "#8fb1d2",
+                    "on-secondary-fixed": "#443100",
+                    "primary-fixed": "#00baff",
+                    "on-surface": "#08314d",
+                    "on-tertiary": "#c7ffe5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift {
+            background-image: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(242,247,255,0.4));
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden">
+<img alt="Profil Pengguna" class="w-full h-full object-cover" data-alt="close up portrait of a smiling middle aged man with kind eyes and warm expression, soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzKuYP7CCAdQbeI643Pgcj2g5rGbdfn5787tW_aaneW8gLh5zLXnyXIclFF-QHykaaWk292xHvz7hMhi6TG68bQ1lFn_pduknaeKGxA0VK6p-XzWjoSQTQLdpp349f7J-UZQSmRcbQKQRtLcMCbcHPfO4vP5BtV4EMUvjHpnKIo1hk4BiW2uisL7Lk_bNDtOE_VDHNleS0CtShbfyomskB9EuB_wtHPW-B3g9j4ydL-Z_nmQCK3zKdg3FmxJqvyYWFoKsQVMWdMx0"/>
+</div>
+<span class="font-plus-jakarta-sans text-lg font-bold text-sky-500 dark:text-sky-400">Lagi Dimana</span>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-sky-50 transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-sky-600" data-icon="notifications">notifications</span>
+</button>
+</header>
+<main class="pt-24 px-6 space-y-8">
+<!-- Hero Section / Editorial Title -->
+<section class="space-y-2">
+<h1 class="text-4xl font-extrabold tracking-tight text-primary leading-tight">Grup Keluarga Saya</h1>
+<p class="text-on-surface-variant font-medium">Memastikan semua orang aman dan terlindungi.</p>
+</section>
+<!-- Bento Grid for Members -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Member Card: Anak -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-[0_8px_30px_rgba(0,0,0,0.02)] border border-outline-variant/10 flex flex-col justify-between h-full">
+<div class="flex justify-between items-start mb-6">
+<div class="relative">
+<div class="w-20 h-20 rounded-full border-4 border-secondary p-1">
+<img alt="Budi" class="w-full h-full rounded-full object-cover shadow-sm" data-alt="cute playful young boy with messy hair laughing, vibrant yellow background, high quality portrait photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-xt13kkmnz0QoBMyJA0K2Lw6Mp9jR2BIZvxIvSEdsfIir_G1WL2SkAVcN2d9UfE7eIFlAD1C0mx2VfmHJMXGdsEL1DNPqqOKzRTaaC0ooAS0lJLcCJy825n2B7FdB5VUuW6nCmZAnFcCwD5zpixq74bwOik5DqlOXnrHDnjA0xu97pWh4QTui_wjczg_g-kmS_vEJd6ORd-6fqia7r9H3DXLAQtTmmXTwCqb3TXHjLuni7njtXzB-1Ec03uP3unIkIk76Xgdya3k"/>
+</div>
+<div class="absolute -bottom-1 -right-1 bg-tertiary text-on-tertiary px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Aman</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 text-secondary font-bold">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">battery_charging_80</span>
+<span class="text-xs">84%</span>
+</div>
+</div>
+</div>
+<div class="space-y-1 mb-8">
+<h3 class="text-2xl font-bold text-on-surface">Budi</h3>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="school">school</span>
+<span class="text-sm font-semibold italic">Sedang di Sekolah</span>
+</div>
+<p class="text-[10px] text-outline mt-2">Dilihat 2 menit yang lalu</p>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<button class="bg-primary hover:bg-primary-dim text-white h-14 rounded-lg flex items-center justify-center gap-2 transition-all active:scale-95">
+<span class="material-symbols-outlined text-xl" data-icon="chat_bubble" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+<span class="font-bold">Chat</span>
+</button>
+<button class="bg-surface-container-high hover:bg-surface-container text-primary h-14 rounded-lg flex items-center justify-center gap-2 transition-all active:scale-95">
+<span class="material-symbols-outlined text-xl" data-icon="call" style="font-variation-settings: 'FILL' 1;">call</span>
+<span class="font-bold">Telepon</span>
+</button>
+</div>
+</div>
+<!-- Member Card: Kakek -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-[0_8px_30px_rgba(0,0,0,0.02)] border border-outline-variant/10 flex flex-col justify-between h-full">
+<div class="flex justify-between items-start mb-6">
+<div class="relative">
+<div class="w-20 h-20 rounded-full border-4 border-primary p-1">
+<img alt="Kakek Sastro" class="w-full h-full rounded-full object-cover shadow-sm" data-alt="distinguished elderly man with white hair and glasses smiling warmly, soft garden background, premium portrait photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwYVUnjaXvJU8XJcVAgTh2R-oP6FmFT9hFpTDvedcU3C1vlZwURGNk9hfzLPok4uEFUJ1jV97YZCyotVbzD_3xGsB3uJjJq9u4bBOC3NjP9j65wCx13fUj9-0pQn2DZ5iv-6Xnxstk8qxT58RRNoIRaMotMg7YY_6fb2InOzIiy5qWeus7iP-ojkCnqoY7qIen5KF4zFY9DJStcAyEeEtGglJLkW2O0AMmTHiLaOimHg-pMrX5WJ8PojJjeLpbr9iSv-SBwVeSeng"/>
+</div>
+<div class="absolute -bottom-1 -right-1 bg-secondary text-on-secondary-fixed px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Berjalan</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 text-error font-bold">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">battery_alert</span>
+<span class="text-xs">12%</span>
+</div>
+</div>
+</div>
+<div class="space-y-1 mb-8">
+<h3 class="text-2xl font-bold text-on-surface">Kakek Sastro</h3>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="home">home</span>
+<span class="text-sm font-semibold italic">Tiba di Rumah</span>
+</div>
+<p class="text-[10px] text-outline mt-2">Dilihat sekarang</p>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<button class="bg-primary hover:bg-primary-dim text-white h-14 rounded-lg flex items-center justify-center gap-2 transition-all active:scale-95">
+<span class="material-symbols-outlined text-xl" data-icon="chat_bubble" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+<span class="font-bold">Chat</span>
+</button>
+<button class="bg-surface-container-high hover:bg-surface-container text-primary h-14 rounded-lg flex items-center justify-center gap-2 transition-all active:scale-95">
+<span class="material-symbols-outlined text-xl" data-icon="call" style="font-variation-settings: 'FILL' 1;">call</span>
+<span class="font-bold">Telepon</span>
+</button>
+</div>
+</div>
+<!-- Member Card: Adik -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-[0_8px_30px_rgba(0,0,0,0.02)] border border-outline-variant/10 flex flex-col justify-between h-full">
+<div class="flex justify-between items-start mb-6">
+<div class="relative">
+<div class="w-20 h-20 rounded-full border-4 border-tertiary-dim p-1">
+<img alt="Siti" class="w-full h-full rounded-full object-cover shadow-sm" data-alt="cute toddler girl with pigtails holding a flower, soft pastel park background, bright and cheerful photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM9F1_xwnDvmAprFgV2tDCZYzhvJgXdXY8Gd0mm1CNIj88fx5HSlZjJqsGBd8EFvcpgwGKFsXdnx0zv7uP7GkRsiI19cjE07x9W4UB3YkeIkRHNUHBYvICftqOmGkqNoqKUoS8KBY3mON79elJLDiqGASZW-ygdt6OF-Wmopij_ovhkPvMoPSPM_GxbywDtK2u0JiPs02hvB2VgpCmUnM_cN-GTUY1RpuSVh0YMjtdIWRta0DT-Y772Sb3L6Jy6XdL94c21qSvnQ8"/>
+</div>
+<div class="absolute -bottom-1 -right-1 bg-primary text-on-primary px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Lari</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 text-primary font-bold">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">battery_full</span>
+<span class="text-xs">100%</span>
+</div>
+</div>
+</div>
+<div class="space-y-1 mb-8">
+<h3 class="text-2xl font-bold text-on-surface">Adik Siti</h3>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="park">park</span>
+<span class="text-sm font-semibold italic">Sedang di Taman</span>
+</div>
+<p class="text-[10px] text-outline mt-2">Dilihat 10 menit yang lalu</p>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<button class="bg-primary hover:bg-primary-dim text-white h-14 rounded-lg flex items-center justify-center gap-2 transition-all active:scale-95">
+<span class="material-symbols-outlined text-xl" data-icon="chat_bubble" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+<span class="font-bold">Chat</span>
+</button>
+<button class="bg-surface-container-high hover:bg-surface-container text-primary h-14 rounded-lg flex items-center justify-center gap-2 transition-all active:scale-95">
+<span class="material-symbols-outlined text-xl" data-icon="call" style="font-variation-settings: 'FILL' 1;">call</span>
+<span class="font-bold">Telepon</span>
+</button>
+</div>
+</div>
+<!-- Add Member Placeholder Card -->
+<div class="bg-primary-container/20 border-2 border-dashed border-primary/30 rounded-xl p-6 flex flex-col items-center justify-center gap-4 text-center cursor-pointer hover:bg-primary-container/30 transition-all">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+<span class="material-symbols-outlined text-4xl" data-icon="add">add</span>
+</div>
+<div>
+<h4 class="text-lg font-bold text-primary">Tambah Anggota</h4>
+<p class="text-sm text-on-surface-variant px-4">Ajak anggota keluarga lain untuk bergabung di grup ini.</p>
+</div>
+</div>
+</div>
+<!-- Extra Info Section (Layering Principle) -->
+<section class="bg-tertiary-container/30 rounded-lg p-6 flex items-center gap-6">
+<div class="w-16 h-16 flex-shrink-0 bg-tertiary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-3xl" data-icon="security" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<div class="space-y-1">
+<h4 class="text-xl font-bold text-on-tertiary-container">Zona Aman Aktif</h4>
+<p class="text-sm text-on-tertiary-fixed-variant leading-relaxed">Semua anggota berada di dalam zona aman yang telah ditentukan. Notifikasi akan dikirim jika ada yang keluar jalur.</p>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl rounded-t-[3rem] z-50 shadow-[0_-8px_30px_rgba(0,0,0,0.04)] border-t border-sky-100/20">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Peta</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-sky-100 dark:bg-sky-900/40 text-sky-700 dark:text-sky-300 rounded-[2rem] px-5 py-2 scale-110" href="#">
+<span class="material-symbols-outlined" data-icon="group" style="font-variation-settings: 'FILL' 1;">group</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Anggota</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Riwayat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Profil</span>
+</a>
+</nav>
+<!-- Floating Action Button (FAB) - Suppressed because it doesn't align with "Anggota" primary list view based on JSON rules, but included if contextual to "Add" which is already in bento. Removed to follow prompt hierarchy -->
+</body></html>
+
+<!-- Daftar Anggota Keluarga -->
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chat Keluarga - Lagi Dimana</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#d8eaff",
+                    "primary-container": "#00baff",
+                    "on-tertiary-fixed-variant": "#296e56",
+                    "primary-dim": "#005578",
+                    "on-secondary-container": "#5b4400",
+                    "error": "#b31b25",
+                    "secondary-fixed": "#f9cc61",
+                    "on-error": "#ffefee",
+                    "on-tertiary-container": "#1c644c",
+                    "on-tertiary-fixed": "#00513b",
+                    "error-dim": "#9f0519",
+                    "surface-variant": "#c2e0ff",
+                    "inverse-surface": "#000f1d",
+                    "tertiary-fixed": "#b6fddd",
+                    "tertiary-dim": "#0e5b43",
+                    "tertiary-container": "#b6fddd",
+                    "on-primary-fixed-variant": "#003c55",
+                    "secondary-fixed-dim": "#eabe55",
+                    "surface-container-highest": "#c2e0ff",
+                    "on-primary": "#e8f4ff",
+                    "surface-container-high": "#cde5ff",
+                    "tertiary-fixed-dim": "#a8eecf",
+                    "secondary": "#745700",
+                    "on-primary-container": "#003248",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#570008",
+                    "on-background": "#08314d",
+                    "surface-dim": "#b2d8ff",
+                    "surface-tint": "#006289",
+                    "surface": "#f2f7ff",
+                    "secondary-container": "#f9cc61",
+                    "inverse-primary": "#00baff",
+                    "background": "#f2f7ff",
+                    "primary-fixed-dim": "#00abeb",
+                    "inverse-on-surface": "#7fa0c1",
+                    "surface-bright": "#f2f7ff",
+                    "tertiary": "#20674f",
+                    "on-secondary": "#fff1da",
+                    "on-primary-fixed": "#001723",
+                    "outline": "#587a99",
+                    "secondary-dim": "#664c00",
+                    "on-surface-variant": "#3d5f7c",
+                    "primary": "#006289",
+                    "surface-container-low": "#e8f2ff",
+                    "error-container": "#fb5151",
+                    "on-secondary-fixed-variant": "#674d00",
+                    "outline-variant": "#8fb1d2",
+                    "on-secondary-fixed": "#443100",
+                    "primary-fixed": "#00baff",
+                    "on-surface": "#08314d",
+                    "on-tertiary": "#c7ffe5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .chat-bubble-left { border-radius: 1.5rem 1.5rem 1.5rem 0.4rem; }
+        .chat-bubble-right { border-radius: 1.5rem 1.5rem 0.4rem 1.5rem; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-10 h-10 rounded-full border-2 border-primary-container object-cover" data-alt="vibrant group avatar representing a happy diverse family with soft illustration style and pastel background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1sIj_OFI4q9OPiknMnFWa51Ms0FexXNbSSFb5ArAZIV4RmI-L-Vps94xH3U5UlvSDKa2DoNB8qJezXBkmjegIsis6s2ysVLzznw1V--7n_76Ja_vKuu7jPDU9ugIWFf9lh8atR_fD7V-RPRmHmhFuVxQKcuXU5c3nUBPNv5OltOYxAH_wZg9eZlCozhOo17GmXO524MtM0RboxtbXcBTtFfHmYEHMEeeIfEevItcOcitHGqykUQEwFDOv5UmRaf4FQO2NHAsTIy8"/>
+<div class="absolute bottom-0 right-0 w-3 h-3 bg-tertiary border-2 border-white rounded-full"></div>
+</div>
+<div>
+<h1 class="font-plus-jakarta-sans text-lg font-bold text-on-background">Keluarga Cemara</h1>
+<p class="text-[10px] text-primary font-medium tracking-wide uppercase">5 Anggota Online</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:opacity-80 transition-transform active:scale-95">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="text-on-surface-variant hover:opacity-80 transition-transform active:scale-95">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</div>
+</header>
+<!-- Main Chat Canvas -->
+<main class="pt-24 px-4 space-y-6 max-w-2xl mx-auto">
+<!-- Date Divider -->
+<div class="flex justify-center">
+<span class="px-4 py-1 rounded-full bg-surface-container-high text-on-surface-variant text-[11px] font-bold uppercase tracking-widest">Hari Ini</span>
+</div>
+<!-- Chat Bubble: Left (Mama) -->
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-end gap-2 max-w-[85%]">
+<img class="w-8 h-8 rounded-full border-2 border-secondary-container object-cover mb-1" data-alt="friendly middle-aged woman avatar with warm smile and soft artistic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLwMeUHk_kURDST1W4Qc9VNu47pUEGqXXfGP0fZViqRoN4mE7fG62cwQy4rHBw1aapJmLh3OU9SwlKEVQIoKKnz2oO79-kx9RsRZ5p5lsPuAlANOEIa1qqqm77mfexnHhjdcmr3i4kdnbaypCQfDagjWjyAfONNyYetHnJuTfYgfqLmc2q4cx1n8HJuX1r9elyOa2nIemVfQEcH6tgAx4wYNs5VDr1PbJWkYftGGOuHqqrQth0PSU-85VSSUnGFeerNonaLskC17c"/>
+<div class="bg-white p-4 chat-bubble-left shadow-sm">
+<p class="text-[10px] font-extrabold text-secondary mb-1">Mama</p>
+<p class="text-sm leading-relaxed">Jangan lupa makan siang ya anak-anak! Mama sudah masak rendang di rumah 🏠✨</p>
+<p class="text-[9px] text-slate-400 mt-2 text-right">12:05</p>
+</div>
+</div>
+</div>
+<!-- Chat Bubble: Right (Self) -->
+<div class="flex flex-col items-end gap-1">
+<div class="flex items-end gap-2 max-w-[85%] justify-end">
+<div class="bg-primary-container text-on-primary-container p-4 chat-bubble-right shadow-md">
+<p class="text-sm leading-relaxed">Siap Ma! Aku lagi di jalan pulang nih sama Budi.</p>
+<p class="text-[9px] opacity-70 mt-2 text-right">12:08</p>
+</div>
+</div>
+</div>
+<!-- Location Share Card (Special Component) -->
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-end gap-2 max-w-[85%]">
+<img class="w-8 h-8 rounded-full border-2 border-tertiary-container object-cover mb-1" data-alt="cheerful young boy avatar with energetic expression and colorful background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAshXE-FTv4OanQS6lhrgedWq0UnMhFVUQpHpP3OFBZVc2Y7USrgN7aWaQo_JDi_c88p7tfgxRN4gp1We9OZgv5NlHq5k24kOBk5iyfbqlaV9XwpMa1k3S5TMbjkoTh-_5J5GPl00eCtKHUvMmueN_gN5bIgfLfTXMS1Ej_OxT01KyxerhkhS8NTVCwINGfOUL6iJ9bdFK0HoRrGW3Bz_oXIHswBe14BQLgb-CVF96VNpxJ2a6bV1IWtkynItZj98H9UF2oodlpx4g"/>
+<div class="bg-white overflow-hidden chat-bubble-left shadow-sm border border-tertiary-fixed-dim">
+<div class="p-3 bg-tertiary-container/30 flex items-center gap-3">
+<div class="bg-tertiary text-white p-2 rounded-xl">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div>
+<p class="text-[10px] font-extrabold text-tertiary mb-0.5">Budi</p>
+<p class="text-[12px] font-bold text-on-tertiary-container">Berbagi Lokasi Real-time</p>
+</div>
+</div>
+<div class="h-32 w-full relative">
+<img class="w-full h-full object-cover" data-alt="stylized colorful map of a city residential area with a blue dot indicator and soft shadows" data-location="Jakarta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWXntgVlk7Zt5Pts3EoHeufEQCHmdmmk9mnzNR7hVGpRh3i2KYmmeOHUKvkSi6iWCZVMdeJz6eineL7ST9EFu68RTjdORQqeNRcqKafMBQr8R8QAC4PPyC5A0ESQjk6q6th9V8Ix54AhyvbVXNubg8GMbv82idUiNCDGlO1HZ6DiiMHPHYuDc_9LyG7jdlC0HFG_QYbe0OPnzHGhtDJgcLQMCySzXG5z4AhaM33jUgqRZ0c_xQdM9s5ptAC6_Z1KdFe_NWi-bLFaY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-white/80 to-transparent flex items-end p-3">
+<p class="text-[10px] font-medium text-on-surface">Sekitar 500m dari rumah</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Chat Bubble: Left (Papa) -->
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-end gap-2 max-w-[85%]">
+<img class="w-8 h-8 rounded-full border-2 border-primary-container object-cover mb-1" data-alt="kind adult man avatar with glasses and a warm protective vibe in a soft illustrative style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4wEq93_ZpS8tTPwAlsBxbloX6krBEINYEQeA192tIhELY11hYEpXtf-AkA5Ug-5cVq2eGl9T9ZVO144R_-8ocgu5Eljtq4WBNL7ZbN0Lb5gU6GLUN5Nn_Z086qFbvtj1J-xxBw-n5i9kfzBjPraxo8hUsDigRUiAK0v6l57jZSjcAIOUUkK_wezymnHjErnjflt3NJfCthPXfjPMtHOslMu_wYg768xKbZHMOw2gH0Zr0UynNd1tz7azMnYiWRV_UReRWoUT-fYo"/>
+<div class="bg-secondary-container/20 p-4 chat-bubble-left shadow-sm">
+<p class="text-[10px] font-extrabold text-primary-dim mb-1">Papa</p>
+<p class="text-sm leading-relaxed">Papa juga sudah selesai meeting. Hati-hati di jalan ya jagoan-jagoan Papa! 🚗💨</p>
+<p class="text-[9px] text-slate-400 mt-2 text-right">12:12</p>
+</div>
+</div>
+</div>
+<!-- Chat Bubble: Left (Adek) -->
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-end gap-2 max-w-[85%]">
+<img class="w-8 h-8 rounded-full border-2 border-on-error-container/20 object-cover mb-1" data-alt="cute little girl avatar with pigtails and a playful expression in a soft pastel style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGULENQ2YcJzFihz3rQycDJeod_U9Ds1zznfL3l8_WOjM4fL9yVXb2rofxiBTqWXBsbtKkbbq9lY-ZmMd3n_FwiBezq3rGRsAglGILcfFAPHAAq-QJf1C3rf5tAmWwdhm_2BgFNXLxZG7dSnUWMy89EPSLhzmRksxpLftLU88ChXBsD8vm660RNx704R3Vgu4Uo7gCAEqXw3_1vvjdW_beUV4kAZt2SRhLv9uYzdVo9cwtHl5jpEah7mjpmtExKyeThtz7M3DD2lw"/>
+<div class="bg-on-error p-4 chat-bubble-left shadow-sm">
+<p class="text-[10px] font-extrabold text-error mb-1">Adek</p>
+<p class="text-sm leading-relaxed">Nitip es krim dong Kak! 🍦🥺</p>
+<p class="text-[9px] text-slate-400 mt-2 text-right">12:15</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Chat Input Bar (Floating above BottomNav) -->
+<div class="fixed bottom-24 left-0 w-full px-4 z-40">
+<div class="max-w-2xl mx-auto bg-white/90 backdrop-blur-xl rounded-xl p-2 shadow-lg flex items-center gap-2 border border-surface-container-high">
+<button class="w-10 h-10 flex items-center justify-center text-primary hover:bg-primary-container/20 rounded-full transition-colors">
+<span class="material-symbols-outlined">add_circle</span>
+</button>
+<div class="flex-1 relative">
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-2 text-sm focus:ring-2 focus:ring-primary-container placeholder:text-slate-400" placeholder="Ketik pesan..." type="text"/>
+<button class="absolute right-2 top-1/2 -translate-y-1/2 text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">my_location</span>
+</button>
+</div>
+<button class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full shadow-md active:scale-90 transition-transform">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl rounded-t-[3rem] z-50 shadow-[0_-8px_30px_rgba(0,0,0,0.04)] border-t border-sky-100/20">
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Peta</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-sky-100 dark:bg-sky-900/40 text-sky-700 dark:text-sky-300 rounded-[2rem] px-5 py-2 scale-110">
+<span class="material-symbols-outlined" data-icon="chat_bubble" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Chat</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Anggota</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Riwayat</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Profil</span>
+</div>
+</nav>
+</body></html>
+
+<!-- Obrolan Keluarga -->
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pengaturan Zona Aman - Lagi Dimana</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#d8eaff",
+                    "primary-container": "#00baff",
+                    "on-tertiary-fixed-variant": "#296e56",
+                    "primary-dim": "#005578",
+                    "on-secondary-container": "#5b4400",
+                    "error": "#b31b25",
+                    "secondary-fixed": "#f9cc61",
+                    "on-error": "#ffefee",
+                    "on-tertiary-container": "#1c644c",
+                    "on-tertiary-fixed": "#00513b",
+                    "error-dim": "#9f0519",
+                    "surface-variant": "#c2e0ff",
+                    "inverse-surface": "#000f1d",
+                    "tertiary-fixed": "#b6fddd",
+                    "tertiary-dim": "#0e5b43",
+                    "tertiary-container": "#b6fddd",
+                    "on-primary-fixed-variant": "#003c55",
+                    "secondary-fixed-dim": "#eabe55",
+                    "surface-container-highest": "#c2e0ff",
+                    "on-primary": "#e8f4ff",
+                    "surface-container-high": "#cde5ff",
+                    "tertiary-fixed-dim": "#a8eecf",
+                    "secondary": "#745700",
+                    "on-primary-container": "#003248",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#570008",
+                    "on-background": "#08314d",
+                    "surface-dim": "#b2d8ff",
+                    "surface-tint": "#006289",
+                    "surface": "#f2f7ff",
+                    "secondary-container": "#f9cc61",
+                    "inverse-primary": "#00baff",
+                    "background": "#f2f7ff",
+                    "primary-fixed-dim": "#00abeb",
+                    "inverse-on-surface": "#7fa0c1",
+                    "surface-bright": "#f2f7ff",
+                    "tertiary": "#20674f",
+                    "on-secondary": "#fff1da",
+                    "on-primary-fixed": "#001723",
+                    "outline": "#587a99",
+                    "secondary-dim": "#664c00",
+                    "on-surface-variant": "#3d5f7c",
+                    "primary": "#006289",
+                    "surface-container-low": "#e8f2ff",
+                    "error-container": "#fb5151",
+                    "on-secondary-fixed-variant": "#674d00",
+                    "outline-variant": "#8fb1d2",
+                    "on-secondary-fixed": "#443100",
+                    "primary-fixed": "#00baff",
+                    "on-surface": "#08314d",
+                    "on-tertiary": "#c7ffe5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift {
+            transition: background-color 0.3s ease;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f2f7ff;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden border-2 border-primary-container">
+<img alt="Profil Pengguna" class="w-full h-full object-cover" data-alt="close up portrait of a smiling friendly grandmother with soft lighting and a warm pastel background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKgDKey3UCPGQ_ZRFxOImWDS74LQB2XxddZAQIW7u2Og48vxF96oMkkD4X1sO3JcvITHijTvJJXDRKWIT1cMbSTUMKEYXeYw6VzDEbEl1h5MevDTXq2B4WaMLbI-gpyZN0i8URaK-v9vq-jtX2uW7vgS_BH8prB17V-9Im7uDw-Nr96KldlcQPY03Ls9w8uu6Qg1A2ytghuFsopHMZxMjHz0NKX3M6rix20Q6IjTdFONgMrN6T4DnRzEN9AsrX5_SfXKH1JkXgpxY"/>
+</div>
+<span class="text-sky-500 dark:text-sky-400 font-plus-jakarta-sans text-lg font-bold">Lagi Dimana</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-slate-400 hover:opacity-80 transition-transform active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-4 max-w-2xl mx-auto min-h-screen">
+<!-- Editorial Header -->
+<div class="mb-8 px-2">
+<h1 class="text-3xl font-extrabold text-primary tracking-tight mb-2">Zona Aman</h1>
+<p class="text-on-surface-variant leading-relaxed">Atur batas wilayah otomatis untuk menjaga si kecil dan orang tua tercinta.</p>
+</div>
+<!-- Map Section (Bento Style Card) -->
+<div class="relative w-full aspect-square md:aspect-video rounded-xl overflow-hidden shadow-none bg-surface-container-low mb-8 group">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="minimalist satellite map of a residential neighborhood with clean soft colors and a translucent blue circle overlay" data-location="Jakarta" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAznCCAqGFxvZKD-EWHZT7T6k81xM75QznXI1FdLceowWBwSUKX9rNbdELojRTyPTHueME_nHRDRytZd6vjg_qC-4lYdsbm9-f2w6xDd7HnyOkNvh0raUSF9lACNyuZd9-6GWLK0gX8ubw0USfIPv5WKX5Hl2xYerRKkOA8dY5LwdeITXdOG0QLqqo5Lal7FD1zADLfE5yHupPskuZTClZPhLFvIIaFUu2UqJ6b38sYFj-Pmo4lj3kQS3FFQRI1UrnxlZIGreLu-T0')">
+<!-- Geofence Visualization -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-primary/20 border-4 border-primary rounded-full flex items-center justify-center backdrop-blur-[2px]">
+<div class="w-4 h-4 bg-primary rounded-full shadow-[0_0_20px_rgba(0,98,137,0.5)]"></div>
+</div>
+</div>
+<!-- Floating Map Controls -->
+<div class="absolute bottom-4 right-4 flex flex-col gap-2">
+<button class="w-12 h-12 bg-white/80 backdrop-blur-lg rounded-full flex items-center justify-center text-primary shadow-sm active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="my_location">my_location</span>
+</button>
+<button class="w-12 h-12 bg-white/80 backdrop-blur-lg rounded-full flex items-center justify-center text-primary shadow-sm active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Input Section -->
+<div class="space-y-6">
+<!-- Zone Name Input -->
+<div class="space-y-2">
+<label class="block text-sm font-bold text-on-surface-variant ml-2">Nama Zona Aman</label>
+<div class="relative">
+<input class="w-full h-14 px-6 bg-surface-container-high border-none rounded-lg focus:ring-2 focus:ring-primary-container text-on-surface placeholder:text-slate-400 font-medium" placeholder="Misal: Rumah Eyang" type="text"/>
+</div>
+</div>
+<!-- Radius Slider (Custom Appearance) -->
+<div class="space-y-4 p-6 bg-surface-container-low rounded-lg">
+<div class="flex justify-between items-center mb-2">
+<label class="text-sm font-bold text-on-surface-variant">Radius Jangkauan</label>
+<span class="text-primary font-extrabold">250 Meter</span>
+</div>
+<input class="w-full h-2 bg-surface-variant rounded-full appearance-none cursor-pointer accent-primary" max="1000" min="100" type="range" value="250"/>
+<div class="flex justify-between text-[10px] text-slate-400 font-bold px-1">
+<span>100m</span>
+<span>500m</span>
+<span>1km</span>
+</div>
+</div>
+<!-- Notification Toggles (Layering Principle) -->
+<div class="bg-surface-container-high p-6 rounded-lg space-y-6">
+<h3 class="font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="notifications_active">notifications_active</span>
+                    Pengaturan Notifikasi
+                </h3>
+<div class="flex items-center justify-between">
+<div>
+<p class="font-bold text-on-surface">Saat Masuk Zona</p>
+<p class="text-xs text-on-surface-variant">Kirim peringatan ketika target tiba</p>
+</div>
+<div class="w-12 h-6 bg-primary rounded-full relative p-1 cursor-pointer">
+<div class="w-4 h-4 bg-white rounded-full ml-auto"></div>
+</div>
+</div>
+<div class="flex items-center justify-between border-t border-sky-100/30 pt-4">
+<div>
+<p class="font-bold text-on-surface">Saat Keluar Zona</p>
+<p class="text-xs text-on-surface-variant">Kirim peringatan ketika target pergi</p>
+</div>
+<div class="w-12 h-6 bg-primary rounded-full relative p-1 cursor-pointer">
+<div class="w-4 h-4 bg-white rounded-full ml-auto"></div>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full h-14 bg-gradient-to-r from-primary to-primary-fixed-dim text-on-primary font-bold rounded-xl shadow-lg active:scale-95 transition-transform duration-200 mt-4">
+                Simpan Konfigurasi Zona
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl rounded-t-[3rem] z-50 shadow-[0_-8px_30px_rgba(0,0,0,0.04)] border-t border-sky-100/20">
+<a class="flex flex-col items-center justify-center bg-sky-100 dark:bg-sky-900/40 text-sky-700 dark:text-sky-300 rounded-[2rem] px-5 py-2 scale-110" href="#">
+<span class="material-symbols-outlined" data-icon="map" style="font-variation-settings: 'FILL' 1;">map</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Peta</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Anggota</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Riwayat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Profil</span>
+</a>
+</nav>
+</body></html>
+
+<!-- Atur Zona Aman -->
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Riwayat Perjalanan - Lagi Dimana</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#d8eaff",
+                    "primary-container": "#00baff",
+                    "on-tertiary-fixed-variant": "#296e56",
+                    "primary-dim": "#005578",
+                    "on-secondary-container": "#5b4400",
+                    "error": "#b31b25",
+                    "secondary-fixed": "#f9cc61",
+                    "on-error": "#ffefee",
+                    "on-tertiary-container": "#1c644c",
+                    "on-tertiary-fixed": "#00513b",
+                    "error-dim": "#9f0519",
+                    "surface-variant": "#c2e0ff",
+                    "inverse-surface": "#000f1d",
+                    "tertiary-fixed": "#b6fddd",
+                    "tertiary-dim": "#0e5b43",
+                    "tertiary-container": "#b6fddd",
+                    "on-primary-fixed-variant": "#003c55",
+                    "secondary-fixed-dim": "#eabe55",
+                    "surface-container-highest": "#c2e0ff",
+                    "on-primary": "#e8f4ff",
+                    "surface-container-high": "#cde5ff",
+                    "tertiary-fixed-dim": "#a8eecf",
+                    "secondary": "#745700",
+                    "on-primary-container": "#003248",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#570008",
+                    "on-background": "#08314d",
+                    "surface-dim": "#b2d8ff",
+                    "surface-tint": "#006289",
+                    "surface": "#f2f7ff",
+                    "secondary-container": "#f9cc61",
+                    "inverse-primary": "#00baff",
+                    "background": "#f2f7ff",
+                    "primary-fixed-dim": "#00abeb",
+                    "inverse-on-surface": "#7fa0c1",
+                    "surface-bright": "#f2f7ff",
+                    "tertiary": "#20674f",
+                    "on-secondary": "#fff1da",
+                    "on-primary-fixed": "#001723",
+                    "outline": "#587a99",
+                    "secondary-dim": "#664c00",
+                    "on-surface-variant": "#3d5f7c",
+                    "primary": "#006289",
+                    "surface-container-low": "#e8f2ff",
+                    "error-container": "#fb5151",
+                    "on-secondary-fixed-variant": "#674d00",
+                    "outline-variant": "#8fb1d2",
+                    "on-secondary-fixed": "#443100",
+                    "primary-fixed": "#00baff",
+                    "on-surface": "#08314d",
+                    "on-tertiary": "#c7ffe5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 23px;
+            top: 40px;
+            bottom: 0;
+            width: 2px;
+            background: repeating-linear-gradient(to bottom, #c2e0ff 0, #c2e0ff 8px, transparent 8px, transparent 16px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center overflow-hidden">
+<img alt="Profil Pengguna" class="w-full h-full object-cover" data-alt="close-up portrait of a friendly young boy with a cap and glasses, digital art style, soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZA7sog8DbF0O8mTVUbXwkFYu2Mcwk4ROU_zHIaR3WNnFu3DjFngAxAnqHvvgQgZPjVNAUBYhiH_M6mv_5j7KPduWfzu7JV-defJuE3pHmkPGLZCiSCcvaul5PrtzyNCeBTlUSbyTS28vyPMukUhneoNSZchwRTEHZDTdfTydPg3-jp7rjeqDVdXxOs2tOI76o9IHs_OhhNAcfJsYiDi30qHqt7n45fHs8MgF32v0flahMBI8VJP4xmknUWWd4zL6yFqQUPeqz6M8"/>
+</div>
+<span class="font-plus-jakarta-sans text-lg font-bold text-sky-500">Riwayat</span>
+</div>
+<div class="text-2xl font-black text-sky-600 dark:text-sky-400 tracking-tight">Lagi Dimana</div>
+<button class="material-symbols-outlined text-sky-500 hover:opacity-80 transition-transform active:scale-95" data-icon="notifications">notifications</button>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto">
+<!-- Date Selector (Small Calendar) -->
+<section class="mb-8">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-xl font-bold tracking-tight text-primary">Oktober 2023</h2>
+<div class="flex gap-2">
+<button class="p-2 bg-surface-container-low rounded-full text-primary hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="p-2 bg-surface-container-low rounded-full text-primary hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex justify-between gap-2 overflow-x-auto pb-2 scrollbar-hide">
+<div class="flex flex-col items-center min-w-[50px] p-3 rounded-lg bg-surface-container-low text-on-surface-variant">
+<span class="text-[10px] font-bold uppercase tracking-wider mb-1">Sen</span>
+<span class="text-lg font-extrabold">23</span>
+</div>
+<div class="flex flex-col items-center min-w-[50px] p-3 rounded-lg bg-surface-container-low text-on-surface-variant">
+<span class="text-[10px] font-bold uppercase tracking-wider mb-1">Sel</span>
+<span class="text-lg font-extrabold">24</span>
+</div>
+<div class="flex flex-col items-center min-w-[50px] p-3 rounded-xl bg-primary-container text-on-primary-container shadow-lg shadow-primary-container/20 ring-4 ring-primary-container/10">
+<span class="text-[10px] font-bold uppercase tracking-wider mb-1">Rab</span>
+<span class="text-lg font-extrabold">25</span>
+</div>
+<div class="flex flex-col items-center min-w-[50px] p-3 rounded-lg bg-surface-container-low text-on-surface-variant">
+<span class="text-[10px] font-bold uppercase tracking-wider mb-1">Kam</span>
+<span class="text-lg font-extrabold">26</span>
+</div>
+<div class="flex flex-col items-center min-w-[50px] p-3 rounded-lg bg-surface-container-low text-on-surface-variant">
+<span class="text-[10px] font-bold uppercase tracking-wider mb-1">Jum</span>
+<span class="text-lg font-extrabold">27</span>
+</div>
+<div class="flex flex-col items-center min-w-[50px] p-3 rounded-lg bg-surface-container-low text-on-surface-variant">
+<span class="text-[10px] font-bold uppercase tracking-wider mb-1">Sab</span>
+<span class="text-lg font-extrabold">28</span>
+</div>
+</div>
+</section>
+<!-- Timeline Section -->
+<section class="space-y-0 relative timeline-line">
+<!-- Timeline Item 1 -->
+<div class="relative flex gap-6 pb-10">
+<div class="z-10 w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center shadow-lg shadow-tertiary-container/30">
+<span class="material-symbols-outlined text-tertiary" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+</div>
+<div class="flex-1 bg-surface-container-lowest p-5 rounded-lg shadow-sm border border-outline-variant/10">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-extrabold text-on-surface">Rumah (Titik Awal)</h3>
+<span class="text-xs font-bold px-2 py-1 bg-tertiary-fixed text-on-tertiary-fixed rounded-full">07:00</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Berangkat menuju sekolah dengan bus jemputan.</p>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative flex gap-6 pb-10">
+<div class="z-10 w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shadow-lg shadow-secondary-container/30">
+<span class="material-symbols-outlined text-secondary" data-icon="school" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+<div class="flex-1 bg-surface-container-lowest p-5 rounded-lg shadow-sm border border-outline-variant/10">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-extrabold text-on-surface">SD Pelita Harapan</h3>
+<span class="text-xs font-bold px-2 py-1 bg-secondary-fixed-dim text-on-secondary-fixed rounded-full">07:45</span>
+</div>
+<div class="w-full h-32 rounded-lg overflow-hidden mb-3">
+<img alt="Sekolah" class="w-full h-full object-cover" data-alt="aerial view of a modern colorful primary school building with a large green playground and bright sunlit courtyard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvmoKgFuhL1rf4aRbgfEXk8PHjQCd_xHA3C7Mx6zyJLy0Pgj6PwXG97O_QXBRjCdM-JBaSb3e0uvUkVmkxs4bYuPYUEN2WjB2GD9SOKACOuOnn-aS5ZjHskySbJ20VB-OmSkYK1sS-VDlHc53mZO6B1Zs5KKwnHLz6MMZTFtHfZ96vc1_7wJLm40tw5-JORkqVgAkOwBi5zm8zy6certjfp5FZlxkQp_YTOk6BNTt2x7aIpnqBA1K44lqduowQi12lZ3CUPrCOZe8"/>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Tiba di sekolah tepat waktu. Status: Aman.</p>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="relative flex gap-6 pb-10">
+<div class="z-10 w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shadow-lg shadow-primary-container/30">
+<span class="material-symbols-outlined text-white" data-icon="park" style="font-variation-settings: 'FILL' 1;">park</span>
+</div>
+<div class="flex-1 bg-surface-container-lowest p-5 rounded-lg shadow-sm border border-outline-variant/10">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-extrabold text-on-surface">Taman Kota Bunga</h3>
+<span class="text-xs font-bold px-2 py-1 bg-surface-variant text-primary-dim rounded-full">14:20</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Sedang beristirahat dan bermain setelah jam sekolah usai.</p>
+<div class="mt-3 flex items-center gap-2 text-xs font-bold text-primary">
+<span class="material-symbols-outlined text-sm">near_me</span>
+                        2.4 km dari lokasi Anda
+                    </div>
+</div>
+</div>
+<!-- Timeline Item 4 (Current) -->
+<div class="relative flex gap-6 pb-4">
+<div class="z-10 w-12 h-12 rounded-full bg-white ring-4 ring-primary-container flex items-center justify-center shadow-xl">
+<div class="w-8 h-8 rounded-full overflow-hidden">
+<img alt="Current Position" class="w-full h-full object-cover" data-alt="avatar of a smiling boy for map marker" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa139mY1vFl9cRYN-IKrFSZpcp5RkBkBy0R0v36clymhDyda109liIt0dwhJxiJEmWeWGQhZYdgjo9tbvvOhFOwxNdlAqyWd2P0Kpk9sB3ukwSckwJAt6W6_IZBWV5uw9vPbTOir58CcMEO9ajV4BgPxD4OkCm-ip8IIjSK4NBlS4sbByI_ZIxIWyiBzbUp1vNzPgABuPMSAZrZfy1GrTpkFBcd3UP5f19xtWxzRBTv4Xf4lFnVVi5n3yPLFk4AD3E-3i4cQfUfZk"/>
+</div>
+</div>
+<div class="flex-1 bg-primary-container/10 p-5 rounded-lg border-2 border-primary-container/30">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-extrabold text-primary-dim">Sedang Berjalan</h3>
+<span class="text-xs font-bold px-2 py-1 bg-primary-container text-on-primary-container rounded-full uppercase tracking-tighter">Sekarang</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed italic">Menuju tempat kursus robotik.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl rounded-t-[3rem] z-50 shadow-[0_-8px_30px_rgba(0,0,0,0.04)] border-t border-sky-100/20">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Peta</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Anggota</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-sky-100 dark:bg-sky-900/40 text-sky-700 dark:text-sky-300 rounded-[2rem] px-5 py-2 scale-110 active:scale-90 transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="history" style="font-variation-settings: 'FILL' 1;">history</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Riwayat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Profil</span>
+</a>
+</nav>
+</body></html>
+
+<!-- Riwayat Perjalanan -->
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Profil Pengguna - Lagi Dimana</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#d8eaff",
+                    "primary-container": "#00baff",
+                    "on-tertiary-fixed-variant": "#296e56",
+                    "primary-dim": "#005578",
+                    "on-secondary-container": "#5b4400",
+                    "error": "#b31b25",
+                    "secondary-fixed": "#f9cc61",
+                    "on-error": "#ffefee",
+                    "on-tertiary-container": "#1c644c",
+                    "on-tertiary-fixed": "#00513b",
+                    "error-dim": "#9f0519",
+                    "surface-variant": "#c2e0ff",
+                    "inverse-surface": "#000f1d",
+                    "tertiary-fixed": "#b6fddd",
+                    "tertiary-dim": "#0e5b43",
+                    "tertiary-container": "#b6fddd",
+                    "on-primary-fixed-variant": "#003c55",
+                    "secondary-fixed-dim": "#eabe55",
+                    "surface-container-highest": "#c2e0ff",
+                    "on-primary": "#e8f4ff",
+                    "surface-container-high": "#cde5ff",
+                    "tertiary-fixed-dim": "#a8eecf",
+                    "secondary": "#745700",
+                    "on-primary-container": "#003248",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#570008",
+                    "on-background": "#08314d",
+                    "surface-dim": "#b2d8ff",
+                    "surface-tint": "#006289",
+                    "surface": "#f2f7ff",
+                    "secondary-container": "#f9cc61",
+                    "inverse-primary": "#00baff",
+                    "background": "#f2f7ff",
+                    "primary-fixed-dim": "#00abeb",
+                    "inverse-on-surface": "#7fa0c1",
+                    "surface-bright": "#f2f7ff",
+                    "tertiary": "#20674f",
+                    "on-secondary": "#fff1da",
+                    "on-primary-fixed": "#001723",
+                    "outline": "#587a99",
+                    "secondary-dim": "#664c00",
+                    "on-surface-variant": "#3d5f7c",
+                    "primary": "#006289",
+                    "surface-container-low": "#e8f2ff",
+                    "error-container": "#fb5151",
+                    "on-secondary-fixed-variant": "#674d00",
+                    "outline-variant": "#8fb1d2",
+                    "on-secondary-fixed": "#443100",
+                    "primary-fixed": "#00baff",
+                    "on-surface": "#08314d",
+                    "on-tertiary": "#c7ffe5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift { transition: background-color 0.3s ease; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-white shadow-sm">
+<img alt="Profil Pengguna" class="w-full h-full object-cover" data-alt="cute cartoon boy avatar with a friendly smile and bright blue cap in a playful 2D illustration style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUL_pIfg9r5nQWerUnSJzEHh1A2uKDl68kUkrjeCOG3ozRQZFSPROXDXNCDjk58YsDdeAAvvQAUjrf8hO9PaPjRPzEBf3HvtsnquXlQPk1fApK4LosL3JzIy9BbM87TfGyXZrs4paq7n68Kori9RwcgzHUUI4L-QY3LNsZHkOWicewzh0hxyUfou8imy3fWIlu2sLXJgXgkw_jngtb6eay7dO0CeFi-pe8QauIV0LG_sdFvWyAHKtSUErovAoEDHbKPJpsm-HXzqE"/>
+</div>
+<span class="font-plus-jakarta-sans text-lg font-bold text-sky-500">Profil</span>
+</div>
+<h1 class="text-2xl font-black text-sky-600 tracking-tight">Lagi Dimana</h1>
+<button class="text-sky-500 hover:opacity-80 active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-8">
+<!-- Hero Profile Section -->
+<section class="text-center space-y-6">
+<div class="relative inline-block">
+<div class="w-40 h-40 rounded-xl bg-surface-container-high p-1 shadow-inner overflow-hidden border-4 border-secondary-container">
+<img alt="Selected Character" class="w-full h-full object-cover" data-alt="detailed cartoon adventurer character with brown hair and a yellow backpack smiling widely against a soft blue background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5cSW6nt7kdv7stZpqlQ9pctV_VtZWguVqYQahyVo9-f1ApnG33BZU8Jlbdj2tOV7raonY31-PqV5FGCDZmvzol2ZQqJktG5m6H-EaU2ub-magYPMz7KY5Yekoq7G7AEPsfMEJYasj9Q4HJlTDNbk2yKVlBfbYzKGFDx6Ef0d_j7Pj0qtVx_atqikCvZUe5G3AA-HBRCFbU57RVeNQJnlEHUA1pkU3VvVcw6CCBsDjFG4JnGMEKJr22P2f5eH4Grqk6jNfxTsZPgk"/>
+</div>
+<button class="absolute bottom-2 right-2 bg-primary text-on-primary w-12 h-12 rounded-full flex items-center justify-center shadow-lg active:scale-90 transition-all">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</div>
+<div>
+<h2 class="text-3xl font-extrabold text-primary">Budi Penjelajah</h2>
+<p class="text-on-surface-variant font-medium">ID: #9921-X</p>
+</div>
+</section>
+<!-- Safety Mission / Gamification -->
+<section class="bg-tertiary-container/30 rounded-xl p-6 space-y-4">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">shield_person</span>
+<h3 class="font-bold text-tertiary">Misi Keselamatan</h3>
+</div>
+<span class="text-xs font-bold bg-tertiary text-on-tertiary px-3 py-1 rounded-full">Level 4</span>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-sm font-bold text-tertiary-dim">
+<span>Progres Penjaga</span>
+<span>85%</span>
+</div>
+<div class="w-full h-4 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full w-[85%] shadow-[0_0_12px_rgba(32,103,79,0.3)]"></div>
+</div>
+<p class="text-xs text-on-tertiary-fixed-variant leading-relaxed">
+                    Hebat! Kamu sudah memberi tahu Bunda setiap sampai di sekolah selama 5 hari berturut-turut.
+                </p>
+</div>
+</section>
+<!-- Edit Profile Form -->
+<section class="space-y-6">
+<div class="grid grid-cols-1 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface-variant ml-2">Nama Panggilan</label>
+<div class="bg-surface-container-low rounded-lg px-5 py-4 flex items-center gap-3 border-2 border-transparent focus-within:border-primary-fixed-dim transition-all">
+<span class="material-symbols-outlined text-primary">face</span>
+<input class="bg-transparent border-none focus:ring-0 w-full font-semibold text-on-surface" placeholder="Masukkan nama kamu" type="text" value="Budi Penjelajah"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface-variant ml-2">Nomor Telepon</label>
+<div class="bg-surface-container-low rounded-lg px-5 py-4 flex items-center gap-3 border-2 border-transparent focus-within:border-primary-fixed-dim transition-all">
+<span class="material-symbols-outlined text-primary">call</span>
+<input class="bg-transparent border-none focus:ring-0 w-full font-semibold text-on-surface" placeholder="Nomor HP Bunda/Ayah" type="tel" value="+62 812-3456-7890"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Character Selection Grid -->
+<section class="space-y-4">
+<h3 class="font-bold text-lg text-primary ml-2">Pilih Karaktermu</h3>
+<div class="grid grid-cols-4 gap-4">
+<div class="aspect-square rounded-lg bg-secondary-container p-1 ring-4 ring-primary shadow-lg">
+<img class="w-full h-full rounded-lg" data-alt="cute 2D character avatar of a young explorer with a hat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNT1D8vnPWWBCgAuFS6SDuHKPd0TR5Yz3wLbZYe0S8cuUzMHgc8Z6UsNbZg2cGjtSL1bKHImeQdKKl6jAEu6cIA5YhVnH_6BI3ZZAwz4Gi9p7foGuTGr395AywYvjsWF5GMM7IFlGzanB2j18oVAsOewfUmIgCx2JBVZ9kChJ-HlTSDLBzrzlsPgJYp_zI3u5TWYjD3WPwHstqHguH7jjTdTOMPAWipZL0DllJFpjclpo1fhpjoTv4xnVGkHnUsiT88h07zE6egoo"/>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container-high p-1 hover:bg-secondary-container transition-colors cursor-pointer">
+<img class="w-full h-full rounded-lg" data-alt="playful female cartoon character with pigtails and a bright orange shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQFSBPwwPACfm4d0NMxBmh0bpAcZVUS1L-goJQtmYRoS1_MfQr3YvimOCIBPfBZ8ddWzKVPhVchosA0RjL-rausEyCXo__suR96JJhYiC5C24MJhxjATIM4741atm2XhV76UgJI4DAC0zjAbXgTXhad6bNUPozrRupXlfsTKhOWJUCOFuMVciRecF5GY4VLrwgE2jcZ4ZImg-uJg4uTmRguXHbsMJaO9gsHy95rYM3oxWzVrypYwB4UGxN9OeyZ3jKW9zUQNWlZn0"/>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container-high p-1 hover:bg-secondary-container transition-colors cursor-pointer">
+<img class="w-full h-full rounded-lg" data-alt="cool cartoon character with glasses and a green hoodie" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4-B3lPJv4GnMGUL63jv8aAIpuCBj3LWsJKkLT1i24SBqxMtQurIsHGzDqxgimSGxfOP63GBpIrUoF0dHMlfuQH486qgw1WF7NLN8J3kWHGKv2k8g1Bb0BMmdV6SFVUPXKbCZfwtJXviL1SDEi-rOERc5_ZDDZvWnk-1Tpn8CRTMq0T_ivKVCjz7kjFXk6CCBboqBLhXSWGmWf53i7a0XSjAmkx8OIDYtNrG649rSOjLmPuFCYEcpX1IYVWvo1aCWqTZQtDjVccik"/>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container-high p-1 hover:bg-secondary-container transition-colors cursor-pointer">
+<img class="w-full h-full rounded-lg" data-alt="energetic cartoon character with messy hair and a purple scarf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJY2srWoEVK-_lYSMbIXTSPN845QI0aBQ6k6Tc-xfSQMybEO_UtwOkwpRrhd99atDi_PN2gv6MT37Ug5jzhdzF_tq_j_6KgK6Pm1fVA0bgRg7IQ_txWeMdNEisgHft61A6MgnLPc0pCtl75b4DsoswQzlyK1a237RJAFaHQ4ZVmn8hLbSMq_PZD2HEUGPpb59WkmjnFS9BgtuxkVMEXSrh_o231J28ZccM7enkIGdlbzFl1lUE0XPWMaQEWOVnjBxT-zgtpZX8TjY"/>
+</div>
+</div>
+</section>
+<button class="w-full py-5 bg-primary text-on-primary rounded-xl font-bold text-lg shadow-xl shadow-primary/20 active:scale-95 transition-all">
+            Simpan Perubahan
+        </button>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl rounded-t-[3rem] z-50 shadow-[0_-8px_30px_rgba(0,0,0,0.04)] border-t border-sky-100/20">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400 transition-all" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Peta</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400 transition-all" href="#">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400 transition-all" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Anggota</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400 transition-all" href="#">
+<span class="material-symbols-outlined">history</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Riwayat</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-sky-100 dark:bg-sky-900/40 text-sky-700 dark:text-sky-300 rounded-[2rem] px-5 py-2 scale-110" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Profil</span>
+</a>
+</nav>
+</body></html>
+
+<!-- Profil Saya -->
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lagi Dimana - Tambah Anggota</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#d8eaff",
+                        "primary-container": "#00baff",
+                        "on-tertiary-fixed-variant": "#296e56",
+                        "primary-dim": "#005578",
+                        "on-secondary-container": "#5b4400",
+                        "error": "#b31b25",
+                        "secondary-fixed": "#f9cc61",
+                        "on-error": "#ffefee",
+                        "on-tertiary-container": "#1c644c",
+                        "on-tertiary-fixed": "#00513b",
+                        "error-dim": "#9f0519",
+                        "surface-variant": "#c2e0ff",
+                        "inverse-surface": "#000f1d",
+                        "tertiary-fixed": "#b6fddd",
+                        "tertiary-dim": "#0e5b43",
+                        "tertiary-container": "#b6fddd",
+                        "on-primary-fixed-variant": "#003c55",
+                        "secondary-fixed-dim": "#eabe55",
+                        "surface-container-highest": "#c2e0ff",
+                        "on-primary": "#e8f4ff",
+                        "surface-container-high": "#cde5ff",
+                        "tertiary-fixed-dim": "#a8eecf",
+                        "secondary": "#745700",
+                        "on-primary-container": "#003248",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#570008",
+                        "on-background": "#08314d",
+                        "surface-dim": "#b2d8ff",
+                        "surface-tint": "#006289",
+                        "surface": "#f2f7ff",
+                        "secondary-container": "#f9cc61",
+                        "inverse-primary": "#00baff",
+                        "background": "#f2f7ff",
+                        "primary-fixed-dim": "#00abeb",
+                        "inverse-on-surface": "#7fa0c1",
+                        "surface-bright": "#f2f7ff",
+                        "tertiary": "#20674f",
+                        "on-secondary": "#fff1da",
+                        "on-primary-fixed": "#001723",
+                        "outline": "#587a99",
+                        "secondary-dim": "#664c00",
+                        "on-surface-variant": "#3d5f7c",
+                        "primary": "#006289",
+                        "surface-container-low": "#e8f2ff",
+                        "error-container": "#fb5151",
+                        "on-secondary-fixed-variant": "#674d00",
+                        "outline-variant": "#8fb1d2",
+                        "on-secondary-fixed": "#443100",
+                        "primary-fixed": "#00baff",
+                        "on-surface": "#08314d",
+                        "on-tertiary": "#c7ffe5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-low text-primary active:scale-95 transition-transform">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-plus-jakarta-sans text-lg font-bold text-sky-500">Tambah Anggota</h1>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center overflow-hidden border-2 border-white shadow-sm">
+<img alt="Profil Pengguna" class="w-full h-full object-cover" data-alt="portrait of a friendly smiling senior woman with grey hair in a soft blue sweater, bright and clean indoor lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCljvg1qaMmoOgVW3mtH0TcP_825F1cgdFlE9ve_GC7auJULMgW_Zrzgc5JIGWvQiojAN56nMa4HJdekHc9tHGs8XgTZ5O0d5Dms4GmQ9iJUSf1dKe8Q0uwTLNsNgUDBcqdob8czD0086aEY7ywdd8xTpAKqVRfib5a3O5Oi32h-WclUQScCU0plDImk-SbYdX3P_qnkqzs0iz4O9SoA3oTWJkOKCEEoNKfPpGWaLV8_6utczcp15WBQ50eDDmLhQrRAHG2i3jCqwM"/>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-lg mx-auto">
+<!-- Hero Instruction Section -->
+<section class="mb-10 text-center">
+<div class="inline-flex p-4 rounded-xl bg-tertiary-container text-on-tertiary-container mb-6">
+<span class="material-symbols-outlined !text-4xl" style="font-variation-settings: 'FILL' 1;">group_add</span>
+</div>
+<h2 class="text-3xl font-extrabold tracking-tight mb-4 text-on-background">Mari Bergabung!</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed px-4">
+                Minta kode dari keluarga Anda agar Anda selalu terhubung dan merasa aman bersama mereka.
+            </p>
+</section>
+<!-- Main Bento Grid Layout -->
+<div class="grid grid-cols-1 gap-6">
+<!-- QR Scan Option (High Visibility for Seniors) -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] text-center group active:scale-[0.98] transition-all">
+<div class="mb-6 relative mx-auto w-48 h-48 bg-surface-container-high rounded-lg flex items-center justify-center overflow-hidden">
+<img alt="QR Scanner UI" class="w-32 h-32 opacity-80" data-alt="stylized flat illustration of a QR code on a smartphone screen with soft blue and green accents on a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiylUTVszLEGaxnQhou0jznmHUDj4_xnLNvhc6aiPknf9EKMAt3OABL30XQHe_rw2FoDIPmAbseU9IpIBtX_GBTVkdaDuM8QnrHyGiZKIzKJzd6s6Pusiloog8XGj0950ZPfg2nduMRu6n9Qg4O46aIiMa7gmfdVTFKZREbUeRcRODLN4b5TBW1TUCOaUyNiVal4QxxpJ2tHWNCfEH9jy7OVrl8AyILPoWmPcCkkbvZcTYh_n1EzUDaEAbOEpn8iGEpY_NCfFgNOw"/>
+<div class="absolute inset-0 border-2 border-dashed border-primary/30 m-4 rounded-lg"></div>
+<div class="absolute top-1/2 left-0 w-full h-0.5 bg-primary/40 -translate-y-1/2 blur-[1px]"></div>
+</div>
+<h3 class="text-xl font-bold mb-2">Scan Kode QR</h3>
+<p class="text-on-surface-variant mb-6 text-md">Arahkan kamera ke layar HP keluarga Anda yang menunjukkan gambar kotak-kotak (QR).</p>
+<button class="w-full h-14 bg-primary text-on-primary font-bold rounded-xl flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">qr_code_scanner</span>
+                    Buka Kamera Scan
+                </button>
+</div>
+<!-- Visual Divider -->
+<div class="flex items-center gap-4 py-2">
+<div class="flex-1 h-[2px] bg-surface-container-high"></div>
+<span class="text-outline font-bold text-sm uppercase tracking-widest">Atau</span>
+<div class="flex-1 h-[2px] bg-surface-container-high"></div>
+</div>
+<!-- Manual Code Input -->
+<div class="bg-surface-container-high p-8 rounded-xl">
+<h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">pin</span>
+                    Masukkan 6 Digit Kode
+                </h3>
+<p class="text-on-surface-variant mb-6 text-md">Ketik 6 angka yang diberikan oleh keluarga Anda di bawah ini:</p>
+<div class="flex justify-between gap-2 mb-8">
+<!-- Large touch targets for easier input -->
+<input class="w-12 h-16 text-2xl font-black text-center bg-surface-container-lowest border-none rounded-lg text-primary focus:ring-4 focus:ring-primary-container shadow-sm" maxlength="1" placeholder="-" type="text"/>
+<input class="w-12 h-16 text-2xl font-black text-center bg-surface-container-lowest border-none rounded-lg text-primary focus:ring-4 focus:ring-primary-container shadow-sm" maxlength="1" placeholder="-" type="text"/>
+<input class="w-12 h-16 text-2xl font-black text-center bg-surface-container-lowest border-none rounded-lg text-primary focus:ring-4 focus:ring-primary-container shadow-sm" maxlength="1" placeholder="-" type="text"/>
+<input class="w-12 h-16 text-2xl font-black text-center bg-surface-container-lowest border-none rounded-lg text-primary focus:ring-4 focus:ring-primary-container shadow-sm" maxlength="1" placeholder="-" type="text"/>
+<input class="w-12 h-16 text-2xl font-black text-center bg-surface-container-lowest border-none rounded-lg text-primary focus:ring-4 focus:ring-primary-container shadow-sm" maxlength="1" placeholder="-" type="text"/>
+<input class="w-12 h-16 text-2xl font-black text-center bg-surface-container-lowest border-none rounded-lg text-primary focus:ring-4 focus:ring-primary-container shadow-sm" maxlength="1" placeholder="-" type="text"/>
+</div>
+<button class="w-full h-16 bg-primary-dim text-white font-bold rounded-xl flex items-center justify-center gap-2 shadow-lg active:scale-95 transition-transform">
+                    Lanjutkan
+                    <span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Help Guide Card -->
+<div class="mt-10 p-6 bg-secondary-container/30 rounded-xl flex items-start gap-4">
+<div class="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">help</span>
+</div>
+<div>
+<h4 class="font-bold text-on-secondary-container mb-1">Bingung di mana kodenya?</h4>
+<p class="text-on-secondary-container/80 text-sm leading-relaxed">
+                    Minta keluarga Anda membuka menu <span class="font-bold">"Tambah Anggota"</span> di HP mereka. Kode akan muncul dengan angka besar di layar mereka.
+                </p>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl rounded-t-[3rem] shadow-[0_-8px_30px_rgba(0,0,0,0.04)] border-t border-sky-100/20 z-50">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Peta</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Chat</span>
+</a>
+<div class="flex flex-col items-center justify-center bg-sky-100 dark:bg-sky-900/40 text-sky-700 dark:text-sky-300 rounded-[2rem] px-5 py-2 scale-110">
+<span class="material-symbols-outlined" data-icon="group" style="font-variation-settings: 'FILL' 1;">group</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Anggota</span>
+</div>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Riwayat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Profil</span>
+</a>
+</nav>
+</body></html>
+
+<!-- Tambah Anggota Baru -->
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Detail Anggota - Lagi Dimana</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#d8eaff",
+                    "primary-container": "#00baff",
+                    "on-tertiary-fixed-variant": "#296e56",
+                    "primary-dim": "#005578",
+                    "on-secondary-container": "#5b4400",
+                    "error": "#b31b25",
+                    "secondary-fixed": "#f9cc61",
+                    "on-error": "#ffefee",
+                    "on-tertiary-container": "#1c644c",
+                    "on-tertiary-fixed": "#00513b",
+                    "error-dim": "#9f0519",
+                    "surface-variant": "#c2e0ff",
+                    "inverse-surface": "#000f1d",
+                    "tertiary-fixed": "#b6fddd",
+                    "tertiary-dim": "#0e5b43",
+                    "tertiary-container": "#b6fddd",
+                    "on-primary-fixed-variant": "#003c55",
+                    "secondary-fixed-dim": "#eabe55",
+                    "surface-container-highest": "#c2e0ff",
+                    "on-primary": "#e8f4ff",
+                    "surface-container-high": "#cde5ff",
+                    "tertiary-fixed-dim": "#a8eecf",
+                    "secondary": "#745700",
+                    "on-primary-container": "#003248",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#570008",
+                    "on-background": "#08314d",
+                    "surface-dim": "#b2d8ff",
+                    "surface-tint": "#006289",
+                    "surface": "#f2f7ff",
+                    "secondary-container": "#f9cc61",
+                    "inverse-primary": "#00baff",
+                    "background": "#f2f7ff",
+                    "primary-fixed-dim": "#00abeb",
+                    "inverse-on-surface": "#7fa0c1",
+                    "surface-bright": "#f2f7ff",
+                    "tertiary": "#20674f",
+                    "on-secondary": "#fff1da",
+                    "on-primary-fixed": "#001723",
+                    "outline": "#587a99",
+                    "secondary-dim": "#664c00",
+                    "on-surface-variant": "#3d5f7c",
+                    "primary": "#006289",
+                    "surface-container-low": "#e8f2ff",
+                    "error-container": "#fb5151",
+                    "on-secondary-fixed-variant": "#674d00",
+                    "outline-variant": "#8fb1d2",
+                    "on-secondary-fixed": "#443100",
+                    "primary-fixed": "#00baff",
+                    "on-surface": "#08314d",
+                    "on-tertiary": "#c7ffe5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift {
+            transition: background-color 0.3s ease;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-background antialiased pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-high text-primary Active: scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div class="flex flex-col">
+<span class="font-headline text-lg font-bold text-sky-500">Lagi Dimana</span>
+<span class="text-[10px] uppercase tracking-wider text-slate-400 font-bold">Detail Anggota</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-10 h-10 rounded-full overflow-hidden border-2 border-white shadow-sm">
+<img class="w-full h-full object-cover" data-alt="professional headshot of a smiling middle-aged man with kind eyes and warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1ZncfhOsevE08fTVunxWURviNT2cqZacTRHPGrk-sML1TSWz2Knj71JF0yCHcjb1qtR_QyHgvsCihak0X7OI2XLY3pSmcWTFkdVXF2Rq8GLDc-In_CaDv1JF9YsbqI0K0CkOdvBty8I_Z657NaqeNqngEsbpEEzw3Z1tS2QFXHjcCQxLEroA28QE1S-yMX3dxBTts9xA-aPZj87ldM32OoK1EJMfglvFbn5WSwjcr3rTw44DEiCPkroSLu7v5BNo-kLZ5k_sHb9I"/>
+</button>
+</div>
+</header>
+<main class="pt-24 px-6 space-y-6 max-w-2xl mx-auto">
+<!-- Focus Map Section -->
+<section class="relative h-80 w-full rounded-xl overflow-hidden shadow-sm group">
+<div class="absolute inset-0 bg-slate-200 animate-pulse">
+<img class="w-full h-full object-cover grayscale-[0.2] brightness-105" data-alt="stylized aerial map view of an urban residential neighborhood with soft pastel colors and clear street patterns" data-location="Jakarta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrJBFVpytCH2dx2vBVYKgfZ5MhUracEyJJoKxRmPF96K2ESZ8S-WGgzPH7pmS55KMPt3o5T6kgOMstsTl2U1NgZQqyWveQg4iARCx5EYXh6COXii6zFbtZ1moOMpyLqtBclnGZdT9-kdFyOU4vWdcQXMvYzGKErtHFHTFtB5ONt8wOS3xFUJxTjGmjoU-mK1jmw_duam1vwel8dm1lidS3pqcMgsFWjszbTflzthkg-xT--6VCKh2J69YkZ71NgWskSJhOLnSsh08"/>
+</div>
+<!-- Floating Map Controls -->
+<div class="absolute top-4 right-4 flex flex-col gap-2">
+<button class="w-12 h-12 bg-white/90 backdrop-blur-md rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-all">
+<span class="material-symbols-outlined">my_location</span>
+</button>
+<button class="w-12 h-12 bg-white/90 backdrop-blur-md rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-all">
+<span class="material-symbols-outlined">layers</span>
+</button>
+</div>
+<!-- Focus Pin -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="relative">
+<div class="absolute inset-0 bg-primary/20 rounded-full animate-ping scale-150"></div>
+<div class="relative w-16 h-16 rounded-full border-4 border-white shadow-xl overflow-hidden z-10">
+<img class="w-full h-full object-cover" data-alt="close-up portrait of a cheerful young boy with a bright smile and soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx44UWRXwVgrcMNeHD0zrKqGBHrC_oeeQyHKOFrvDsoV2IduAl6plfXeMWV3FjfRFmgL8IkXWuPvb_T2fNqo49n--ef59XtRRYcCEtBR9DW1UMkbAOJCeoKntXBdKq4FIfjZQ9KsSBdXqc8dTJWFxkiny_CIe0J0atd8TyBxrGRaKi61Rp5ZFBQDNT2yzMX4esUutKkSponZggNLPpthjP0Ayh42MykZ30sqegwBWJz3YS0oNN_L9JGIRx_2siQQUdVziG0vSKHw4"/>
+</div>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 bg-tertiary rounded-full border-2 border-white flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[14px] text-on-tertiary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Location Badge -->
+<div class="absolute bottom-4 left-4 right-4">
+<div class="bg-white/80 backdrop-blur-2xl p-4 rounded-lg flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="text-xs text-on-surface-variant font-semibold">Lokasi Terkini</p>
+<p class="text-sm font-bold text-on-surface">SDN Menteng 01, Jakarta</p>
+</div>
+</div>
+<button class="bg-primary text-white px-5 py-2 rounded-full text-xs font-bold shadow-md hover:bg-primary-dim transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">directions</span>
+                        Navigasi
+                    </button>
+</div>
+</div>
+</section>
+<!-- Bento Stats Grid -->
+<div class="grid grid-cols-2 gap-4">
+<!-- Battery Card -->
+<div class="bg-surface-container-lowest p-5 rounded-lg flex flex-col gap-4 shadow-sm">
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">battery_charging_80</span>
+</div>
+<span class="text-2xl font-black text-secondary">84%</span>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">Baterai Detail</p>
+<p class="text-[10px] text-on-surface-variant">Sedang mengisi daya</p>
+</div>
+</div>
+<!-- Speed Card -->
+<div class="bg-surface-container-lowest p-5 rounded-lg flex flex-col gap-4 shadow-sm">
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 rounded-full bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">speed</span>
+</div>
+<span class="text-2xl font-black text-tertiary">3.2</span>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">Kecepatan</p>
+<p class="text-[10px] text-on-surface-variant">Km/jam (Berjalan Kaki)</p>
+</div>
+</div>
+</div>
+<!-- Activity History -->
+<section class="space-y-4">
+<div class="flex items-center justify-between">
+<h3 class="font-headline font-bold text-lg px-2">Riwayat Hari Ini</h3>
+<button class="text-xs font-bold text-primary px-3 py-1 bg-primary-container/10 rounded-full">Lihat Semua</button>
+</div>
+<div class="space-y-0.5">
+<!-- Activity Item 1 -->
+<div class="bg-surface-container-low p-4 rounded-t-lg flex gap-4 items-center">
+<div class="w-2 h-2 rounded-full bg-primary ring-4 ring-primary-container/20 shrink-0"></div>
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<p class="text-sm font-bold">Tiba di Sekolah</p>
+<span class="text-[10px] font-semibold text-on-surface-variant">07:15 WIB</span>
+</div>
+<p class="text-xs text-on-surface-variant">Lokasi aman terdeteksi</p>
+</div>
+</div>
+<!-- Activity Item 2 -->
+<div class="bg-surface-container-low p-4 flex gap-4 items-center">
+<div class="w-2 h-2 rounded-full bg-slate-300 shrink-0"></div>
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<p class="text-sm font-bold">Meninggalkan Rumah</p>
+<span class="text-[10px] font-semibold text-on-surface-variant">06:45 WIB</span>
+</div>
+<p class="text-xs text-on-surface-variant">Kecepatan rata-rata 25 km/jam</p>
+</div>
+</div>
+<!-- Activity Item 3 -->
+<div class="bg-surface-container-low p-4 rounded-b-lg flex gap-4 items-center opacity-70">
+<div class="w-2 h-2 rounded-full bg-slate-300 shrink-0"></div>
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<p class="text-sm font-bold">Bangun Tidur</p>
+<span class="text-[10px] font-semibold text-on-surface-variant">06:00 WIB</span>
+</div>
+<p class="text-xs text-on-surface-variant">Status baterai 100%</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Danger Zone / SOS Indicator -->
+<div class="p-6 rounded-lg bg-error-container/10 border-2 border-dashed border-error-container/30 flex flex-col items-center text-center gap-3">
+<div class="w-12 h-12 rounded-full bg-error-container flex items-center justify-center text-on-error">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">emergency</span>
+</div>
+<div>
+<h4 class="font-bold text-on-error-container">Butuh Bantuan Mendesak?</h4>
+<p class="text-xs text-on-error-container/70 max-w-[240px] mx-auto mt-1">Kirim sinyal SOS ke perangkat anggota ini segera.</p>
+</div>
+<button class="mt-2 px-8 py-3 bg-error text-white rounded-full font-bold shadow-lg shadow-error/20 active:scale-95 transition-all">
+                KIRIM SINYAL SOS
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl rounded-t-[3rem] z-50 shadow-[0_-8px_30px_rgba(0,0,0,0.04)] tonal-shift border-t border-sky-100/20">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Peta</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-sky-100 dark:bg-sky-900/40 text-sky-700 dark:text-sky-300 rounded-[2rem] px-5 py-2 scale-110 Active: scale-90 transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="group" style="font-variation-settings: 'FILL' 1;">group</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Anggota</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Riwayat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Profil</span>
+</a>
+</nav>
+</body></html>
+
+<!-- Detail Anggota -->
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lagi Dimana - Notifikasi &amp; Alert</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#d8eaff",
+                    "primary-container": "#00baff",
+                    "on-tertiary-fixed-variant": "#296e56",
+                    "primary-dim": "#005578",
+                    "on-secondary-container": "#5b4400",
+                    "error": "#b31b25",
+                    "secondary-fixed": "#f9cc61",
+                    "on-error": "#ffefee",
+                    "on-tertiary-container": "#1c644c",
+                    "on-tertiary-fixed": "#00513b",
+                    "error-dim": "#9f0519",
+                    "surface-variant": "#c2e0ff",
+                    "inverse-surface": "#000f1d",
+                    "tertiary-fixed": "#b6fddd",
+                    "tertiary-dim": "#0e5b43",
+                    "tertiary-container": "#b6fddd",
+                    "on-primary-fixed-variant": "#003c55",
+                    "secondary-fixed-dim": "#eabe55",
+                    "surface-container-highest": "#c2e0ff",
+                    "on-primary": "#e8f4ff",
+                    "surface-container-high": "#cde5ff",
+                    "tertiary-fixed-dim": "#a8eecf",
+                    "secondary": "#745700",
+                    "on-primary-container": "#003248",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#570008",
+                    "on-background": "#08314d",
+                    "surface-dim": "#b2d8ff",
+                    "surface-tint": "#006289",
+                    "surface": "#f2f7ff",
+                    "secondary-container": "#f9cc61",
+                    "inverse-primary": "#00baff",
+                    "background": "#f2f7ff",
+                    "primary-fixed-dim": "#00abeb",
+                    "inverse-on-surface": "#7fa0c1",
+                    "surface-bright": "#f2f7ff",
+                    "tertiary": "#20674f",
+                    "on-secondary": "#fff1da",
+                    "on-primary-fixed": "#001723",
+                    "outline": "#587a99",
+                    "secondary-dim": "#664c00",
+                    "on-surface-variant": "#3d5f7c",
+                    "primary": "#006289",
+                    "surface-container-low": "#e8f2ff",
+                    "error-container": "#fb5151",
+                    "on-secondary-fixed-variant": "#674d00",
+                    "outline-variant": "#8fb1d2",
+                    "on-secondary-fixed": "#443100",
+                    "primary-fixed": "#00baff",
+                    "on-surface": "#08314d",
+                    "on-tertiary": "#c7ffe5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .filled-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden border-2 border-white shadow-sm">
+<img alt="Profil Pengguna" class="w-full h-full object-cover" data-alt="friendly smiling man avatar with professional and warm lighting against a soft blue background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOYKhljyGhW7Q5eyk94gf4t0uSr3dJVPUeW3J281JZeYu0Q2Esngvk2QalwjMxX2Cpd59spoERQlABr877b9prsOWGjDwd61yBOvCC3zKmm41HFvGI4fLKL3QUVQWpiaqtGi0RwC52VA7BFKBHSBJUOublQHzFpV-oRGl0T7H8oCK0dmHysocuJL16n1S8pJky5QRnH11snqwwASnEbkUWA-gbCJK6Ddb2vRcUuFEmhCXHIh9AKfbjXw_5imbn6MmUjRitGRCCOGQ"/>
+</div>
+<h1 class="font-plus-jakarta-sans text-lg font-bold text-sky-600">Lagi Dimana</h1>
+</div>
+<button class="w-10 h-10 flex items-center justify-center text-sky-500 hover:opacity-80 transition-transform active:scale-95">
+<span class="material-symbols-outlined filled-icon" data-icon="notifications">notifications</span>
+</button>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto">
+<!-- Hero Status -->
+<section class="mb-10 text-center">
+<div class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/30 text-secondary font-bold text-xs mb-4">
+                AKTIVITAS HARI INI
+            </div>
+<h2 class="text-3xl font-extrabold tracking-tight text-on-background mb-2">Pemberitahuan</h2>
+<p class="text-on-surface-variant font-medium">Semua orang aman dan terpantau dengan baik.</p>
+</section>
+<!-- Bento Grid Notifications -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Alert: Critical / Battery -->
+<div class="md:col-span-2 p-6 rounded-xl bg-error-container/10 border-l-4 border-error flex items-start gap-5">
+<div class="w-14 h-14 rounded-full bg-error-container flex items-center justify-center shrink-0 shadow-lg shadow-error/20">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="battery_very_low">battery_very_low</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-bold text-lg text-on-error-container">Baterai HP Ibu Lemah</h3>
+<span class="text-[10px] font-bold uppercase tracking-wider text-error opacity-70">SEKARANG</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed mb-4">Sisa baterai 5%. Segera ingatkan Ibu untuk mengisi daya ponsel agar tetap terhubung.</p>
+<button class="px-6 py-2.5 bg-error text-white font-bold rounded-full text-sm active:scale-95 transition-transform">
+                        Ingatkan Ibu
+                    </button>
+</div>
+</div>
+<!-- Notification: Location Reach -->
+<div class="p-6 rounded-xl bg-tertiary-container/20 flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-tertiary text-2xl filled-icon" data-icon="school">school</span>
+</div>
+<div>
+<p class="text-xs font-bold text-tertiary uppercase tracking-widest">LOKASI AMAN</p>
+<h3 class="font-bold text-on-background">Dika sudah sampai</h3>
+</div>
+</div>
+<div class="relative h-24 rounded-lg overflow-hidden mb-1">
+<img class="w-full h-full object-cover" data-alt="colorful elementary school building with blue sky and green trees in a friendly neighborhood setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCien1mCMNqarjbAzVHIAiyaVjy97MZjGCuW4WYkJpPtDzqOQD5fpWVknCYPTFSp6pKOyz2lq8JYwWQK3TTJuMkzfdi7puhNchAv8Cy2uekJDvdMbtOasWBgXrP6DsGPVjtF9taJFa9Vg7JvmgH5uSn0ltjUMkG49ObuY9Z83WDfEx_gsTxHcKxTW6ibCuKz16_LOOkA1eWwfAsZK88X1nHuKl17zFRio_9mt7IapfPxI1kAqa4PQvxZxz0AWzI_KWu7LbWUcb-K2Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-2 left-3 text-white text-[10px] font-bold">Sekolah Dasar Jakarta</div>
+</div>
+<p class="text-sm text-on-surface-variant">Dika baru saja sampai di Sekolah tepat pukul 07:15 WIB.</p>
+<p class="text-[10px] font-semibold text-slate-400 mt-auto">12 MENIT YANG LALU</p>
+</div>
+<!-- Notification: Group Activity -->
+<div class="p-6 rounded-xl bg-surface-container flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary text-2xl" data-icon="group">group</span>
+</div>
+<div>
+<p class="text-xs font-bold text-primary uppercase tracking-widest">GRUP KELUARGA</p>
+<h3 class="font-bold text-on-background">Ayah sedang di jalan</h3>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant">Ayah meninggalkan Kantor dan sedang menuju ke Rumah. Estimasi sampai 30 menit.</p>
+<div class="flex -space-x-2 mt-2">
+<div class="w-8 h-8 rounded-full border-2 border-white bg-slate-200 overflow-hidden">
+<img alt="ayah" data-alt="middle aged man portrait with warm smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL9GMdgqvW9Nsj3Cuut-aVAjgjfMyNKuRNYBC7jSixNkjYDS78ockxif3U42beVJ4a5JdEzWxkvZoapWkgvgjYdggV3GG2vfWNCPxiCFQXp3jgn8q3NGApEPq9scwCCbMW9y4aQlB8E7_royVjk2bvVyMRuIkH0W23Bbn9TWvTzeZfGjPYHdcuQnI5Yf3YW1J50LQCFp2A6pJOebOD3iBBAu4xRuzRygv8DMBywasdR_5ew2xwlNyq-zddlAYA_J9d-PhPN7oQMM4"/>
+</div>
+<div class="w-8 h-8 rounded-full border-2 border-white bg-slate-200 overflow-hidden">
+<img alt="ibu" data-alt="woman portrait with kind expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVkIaI5aHgJya9nZ6nD4bO6fFozBPPLPngTYeN4EuDj5v66PeFW3f7snPUkdcUFJv0FqbX5cR-NhbAPXzcTDHALqhErpqsq5DFS7duZ-U7bb64GtXB7Ug8MFNSwTOK_WaLDVlQMNHH6AESnm-KLmP-CNDlv-8e9Z7SdNChx57A9gK84cUDrxNRKTTg0Wd3otz9mvaU8vpTIBHjEAudBwmRKeyX2D-Wwp_aqHfsGZVj9QAVsmK2Cn2FwZlMF937VF3pCLgpzcuhnto"/>
+</div>
+<div class="w-8 h-8 rounded-full border-2 border-white bg-primary-container flex items-center justify-center text-[10px] font-bold text-on-primary-container">
+                        +2
+                    </div>
+</div>
+<p class="text-[10px] font-semibold text-slate-400 mt-auto">45 MENIT YANG LALU</p>
+</div>
+<!-- Notification: Safety Zone -->
+<div class="md:col-span-2 p-6 rounded-xl bg-surface-container-high flex items-center gap-5">
+<div class="w-14 h-14 rounded-full bg-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-container text-3xl filled-icon" data-icon="shield_person">shield_person</span>
+</div>
+<div class="flex-1">
+<h3 class="font-bold text-on-background">Zona Aman Baru Dibuat</h3>
+<p class="text-sm text-on-surface-variant">Radius 500m di sekitar Taman Kota telah diaktifkan sebagai Zona Aman untuk semua anggota.</p>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-white/50 text-secondary active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+<!-- Notification: Activity Summary -->
+<div class="md:col-span-2 p-6 rounded-xl bg-white/40 border border-white/60 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sky-500" data-icon="history">history</span>
+<h3 class="font-bold text-on-background">Riwayat Kemarin</h3>
+</div>
+<button class="text-xs font-bold text-primary underline">LIHAT SEMUA</button>
+</div>
+<div class="space-y-3">
+<div class="flex items-center gap-3 p-3 rounded-lg bg-white/50">
+<span class="material-symbols-outlined text-slate-400 text-sm" data-icon="check_circle">check_circle</span>
+<p class="text-xs font-medium text-on-surface-variant">Semua anggota keluarga pulang sebelum pukul 21:00.</p>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-white/50">
+<span class="material-symbols-outlined text-slate-400 text-sm" data-icon="check_circle">check_circle</span>
+<p class="text-xs font-medium text-on-surface-variant">Tidak ada laporan baterai lemah terdeteksi tadi malam.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl rounded-t-[3rem] z-50 shadow-[0_-8px_30px_rgba(0,0,0,0.04)] border-t border-sky-100/20">
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold mt-1">Peta</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold mt-1">Chat</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold mt-1">Anggota</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-sky-100 dark:bg-sky-900/40 text-sky-700 dark:text-sky-300 rounded-[2rem] px-5 py-2 scale-110 cursor-pointer">
+<span class="material-symbols-outlined filled-icon" data-icon="history">history</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold mt-1">Riwayat</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold mt-1">Profil</span>
+</div>
+</nav>
+</body></html>
+
+<!-- Pemberitahuan -->
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#d8eaff",
+                    "primary-container": "#00baff",
+                    "on-tertiary-fixed-variant": "#296e56",
+                    "primary-dim": "#005578",
+                    "on-secondary-container": "#5b4400",
+                    "error": "#b31b25",
+                    "secondary-fixed": "#f9cc61",
+                    "on-error": "#ffefee",
+                    "on-tertiary-container": "#1c644c",
+                    "on-tertiary-fixed": "#00513b",
+                    "error-dim": "#9f0519",
+                    "surface-variant": "#c2e0ff",
+                    "inverse-surface": "#000f1d",
+                    "tertiary-fixed": "#b6fddd",
+                    "tertiary-dim": "#0e5b43",
+                    "tertiary-container": "#b6fddd",
+                    "on-primary-fixed-variant": "#003c55",
+                    "secondary-fixed-dim": "#eabe55",
+                    "surface-container-highest": "#c2e0ff",
+                    "on-primary": "#e8f4ff",
+                    "surface-container-high": "#cde5ff",
+                    "tertiary-fixed-dim": "#a8eecf",
+                    "secondary": "#745700",
+                    "on-primary-container": "#003248",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#570008",
+                    "on-background": "#08314d",
+                    "surface-dim": "#b2d8ff",
+                    "surface-tint": "#006289",
+                    "surface": "#f2f7ff",
+                    "secondary-container": "#f9cc61",
+                    "inverse-primary": "#00baff",
+                    "background": "#f2f7ff",
+                    "primary-fixed-dim": "#00abeb",
+                    "inverse-on-surface": "#7fa0c1",
+                    "surface-bright": "#f2f7ff",
+                    "tertiary": "#20674f",
+                    "on-secondary": "#fff1da",
+                    "on-primary-fixed": "#001723",
+                    "outline": "#587a99",
+                    "secondary-dim": "#664c00",
+                    "on-surface-variant": "#3d5f7c",
+                    "primary": "#006289",
+                    "surface-container-low": "#e8f2ff",
+                    "error-container": "#fb5151",
+                    "on-secondary-fixed-variant": "#674d00",
+                    "outline-variant": "#8fb1d2",
+                    "on-secondary-fixed": "#443100",
+                    "primary-fixed": "#00baff",
+                    "on-surface": "#08314d",
+                    "on-tertiary": "#c7ffe5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center overflow-hidden">
+<img alt="Profil Pengguna" class="w-full h-full object-cover" data-alt="Close up portrait of a friendly smiling person with warm lighting and soft natural background focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy_GFrZFHoYi9npdjDGm4RFQgcEXoCfQIMlAJDmmgYui9mDjHsjqxlRKJXF7vL5iA-z7frExvG-mWS3AEoK8Oqp3uR5AX0Mklr-2UXMn2hVljEn4lX5rQt26G2z_sapMPBcuoeqQQ3zxOsJ7aZcMR7QJPjEP7cqvTCgrcOeziegRyc4g1QNCy61pWcjedThpvhiOycKP31wc3RCJOVojdd1zh1wkgqjyXd4g1lTu6GHDnOwYyFf10quvdgXfygra3VYwbIEgylikU"/>
+</div>
+<span class="font-plus-jakarta-sans text-lg font-bold text-sky-500 dark:text-sky-400">Pusat Bantuan</span>
+</div>
+<div class="text-2xl font-black text-sky-600 dark:text-sky-400 tracking-tight">Lagi Dimana</div>
+<button class="material-symbols-outlined text-sky-500 hover:opacity-80 transition-transform active:scale-95" data-icon="notifications">notifications</button>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto">
+<!-- SOS Hero Section -->
+<section class="text-center mb-12">
+<h1 class="text-3xl font-extrabold text-on-background mb-4 leading-tight">Halo Sayang, Jangan Takut Ya!</h1>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">Kalau kamu merasa bingung atau tidak melihat Ayah/Bunda, tekan tombol merah di bawah ini. Bantuan segera datang!</p>
+<!-- Panic Button Container -->
+<div class="relative flex justify-center py-8">
+<!-- Decorative pulse rings -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-64 h-64 bg-error-container/20 rounded-full animate-ping"></div>
+</div>
+<!-- The Giant SOS Button -->
+<button class="relative z-10 w-48 h-48 bg-error-container rounded-full shadow-[0_20px_50px_rgba(251,81,81,0.3)] flex flex-col items-center justify-center active:scale-90 transition-all duration-300 border-8 border-white/50">
+<span class="material-symbols-outlined text-6xl text-on-error-container mb-2" style="font-variation-settings: 'FILL' 1;">emergency_share</span>
+<span class="font-black text-2xl tracking-widest text-on-error-container">SOS</span>
+</button>
+</div>
+</section>
+<!-- Guide Section: What to do -->
+<section class="mb-12 space-y-4">
+<h2 class="text-xl font-bold px-2">Panduan Pintar</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-6 rounded-lg flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="accessibility_new">accessibility_new</span>
+</div>
+<div>
+<h3 class="font-bold text-on-surface mb-1">Berdiri Diam</h3>
+<p class="text-sm text-on-surface-variant">Tetaplah di tempatmu sekarang. Ayah dan Bunda sedang mencarimu!</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="record_voice_over">record_voice_over</span>
+</div>
+<div>
+<h3 class="font-bold text-on-surface mb-1">Cari Seragam</h3>
+<p class="text-sm text-on-surface-variant">Cari kakak petugas berseragam atau ibu yang membawa anak kecil.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Emergency Contacts Section -->
+<section class="mb-12">
+<div class="flex items-center justify-between mb-4 px-2">
+<h2 class="text-xl font-bold">Hubungi Sekarang</h2>
+<button class="text-primary font-semibold text-sm">Kelola Kontak</button>
+</div>
+<div class="space-y-3">
+<!-- Parent Card 1 -->
+<div class="bg-surface-container-highest p-4 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full border-4 border-secondary-fixed p-0.5">
+<img alt="Bunda" class="w-full h-full object-cover rounded-full" data-alt="Soft portrait of a kind-looking woman with a gentle smile in a bright outdoor setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXxABoytmCwbi48gjp-8EjW5FF7hnYdXZEXNm2R8qicSSeohJ7DN-Zq16FvHRziuBTbgJjpdvotsWPb58CTNHCRuS47yNMpG8NRPGXATcKt4AobNe0Y6HynkNMRcmCLHPMTKVeDprHQ7sOzrbFs2xIcEMnVNnIr4k2G8Z6QmJYSOEultW4rP08Jx7CoHD0iUZEg4AxkQuNtDgxkMR6Qe7rPfV_F1S6wkXvQfX6tdSa3EnssH5meFin9qj7rBYXqG7T4kJLzDK6fMg"/>
+</div>
+<div>
+<p class="font-bold text-on-surface">Bunda</p>
+<p class="text-xs text-on-surface-variant">Sangat Dekat • 2 Menit Lagi</p>
+</div>
+</div>
+<button class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container shadow-lg active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="call" style="font-variation-settings: 'FILL' 1;">call</span>
+</button>
+</div>
+<!-- Parent Card 2 -->
+<div class="bg-surface-container-highest p-4 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full border-4 border-primary-fixed-dim p-0.5">
+<img alt="Ayah" class="w-full h-full object-cover rounded-full" data-alt="Friendly portrait of a man with glasses smiling warmly, bright indoor natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx6YVGAykQb6I-DB74AUcwcnZMFhnnwS5pJFI4SZq7tm7I7fUXdzVvi9w2rdB5IPuRvpMHHn7MSlWAud1H2Qje8WWP8HUnrxJT4tiKmHGKwnnPf8WK6zbSHlMfBjGVK_fqjmMPA5Jh_jRBEkCH6uyqynhrBBeLmYMUTCxRXRmfJCTlKLz4sNL_pnr9A28HHFB-vJ8kvAV0K0FLHYtUK1jmYUqx6CAxRZibipkAHoRZzQlpTexZZ1MIk1zcL_-3eIMiJUkY04UzzTk"/>
+</div>
+<div>
+<p class="font-bold text-on-surface">Ayah</p>
+<p class="text-xs text-on-surface-variant">Sedang di Kantor • Hubungi Ayah</p>
+</div>
+</div>
+<button class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container shadow-lg active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="call" style="font-variation-settings: 'FILL' 1;">call</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Location Bento Visual -->
+<section class="mb-8">
+<div class="bg-surface-container rounded-lg overflow-hidden p-6 relative min-h-[180px]">
+<div class="relative z-10">
+<h3 class="text-lg font-bold text-on-surface mb-2">Lokasimu Aman</h3>
+<p class="text-sm text-on-surface-variant max-w-[200px]">Kami sudah mengirimkan alamatmu ke Bunda. Tetap tenang ya!</p>
+</div>
+<!-- Abstract Map Decoration -->
+<div class="absolute right-0 bottom-0 top-0 w-1/2 opacity-20 pointer-events-none">
+<img alt="Peta Lokasi" class="w-full h-full object-cover" data-alt="Stylized map illustration with soft pastel colors and simple location markers in a friendly aesthetic" data-location="Jakarta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr8lWyu0SCsiYnM_sBDE8KQ_DtfknrKJh7y28seykQ1KBEzaqHqzVeeaLMijrEfE_aAxqvxAzcoHZT8wq1oYmq4K0ym4yI5UieMW55S6Ku5uc_7CdRb4FfFO1h5uuGYEZwg2eoutf9Vwaqgr0H5vRfLzavr3i4g3S03lXYuppn-JYoWvp392JBBSw6eOiU8fYDEqw58ERLgI__c3e1aci2FuqEnlfrw1IKP9QFqmpcXyLsTr7Ke8RQL04BNTzXJUenz0j-RBBiGm8"/>
+</div>
+<div class="absolute bottom-6 left-6">
+<div class="flex items-center gap-2 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
+<span class="w-2 h-2 bg-tertiary rounded-full"></span>
+<span class="text-xs font-bold text-tertiary">GPS AKTIF</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl rounded-t-[3rem] z-50 shadow-[0_-8px_30px_rgba(0,0,0,0.04)] border-t border-sky-100/20">
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400 transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Peta</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400 transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Chat</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400 transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Anggota</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400 transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Riwayat</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-sky-100 dark:bg-sky-900/40 text-sky-700 dark:text-sky-300 rounded-[2rem] px-5 py-2 scale-110 active:scale-90 transition-all duration-300 ease-out">
+<span class="material-symbols-outlined" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Profil</span>
+</div>
+</nav>
+</body></html>
+
+<!-- Bantuan & SOS -->
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pengaturan - Lagi Dimana</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#d8eaff",
+                        "primary-container": "#00baff",
+                        "on-tertiary-fixed-variant": "#296e56",
+                        "primary-dim": "#005578",
+                        "on-secondary-container": "#5b4400",
+                        "error": "#b31b25",
+                        "secondary-fixed": "#f9cc61",
+                        "on-error": "#ffefee",
+                        "on-tertiary-container": "#1c644c",
+                        "on-tertiary-fixed": "#00513b",
+                        "error-dim": "#9f0519",
+                        "surface-variant": "#c2e0ff",
+                        "inverse-surface": "#000f1d",
+                        "tertiary-fixed": "#b6fddd",
+                        "tertiary-dim": "#0e5b43",
+                        "tertiary-container": "#b6fddd",
+                        "on-primary-fixed-variant": "#003c55",
+                        "secondary-fixed-dim": "#eabe55",
+                        "surface-container-highest": "#c2e0ff",
+                        "on-primary": "#e8f4ff",
+                        "surface-container-high": "#cde5ff",
+                        "tertiary-fixed-dim": "#a8eecf",
+                        "secondary": "#745700",
+                        "on-primary-container": "#003248",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#570008",
+                        "on-background": "#08314d",
+                        "surface-dim": "#b2d8ff",
+                        "surface-tint": "#006289",
+                        "surface": "#f2f7ff",
+                        "secondary-container": "#f9cc61",
+                        "inverse-primary": "#00baff",
+                        "background": "#f2f7ff",
+                        "primary-fixed-dim": "#00abeb",
+                        "inverse-on-surface": "#7fa0c1",
+                        "surface-bright": "#f2f7ff",
+                        "tertiary": "#20674f",
+                        "on-secondary": "#fff1da",
+                        "on-primary-fixed": "#001723",
+                        "outline": "#587a99",
+                        "secondary-dim": "#664c00",
+                        "on-surface-variant": "#3d5f7c",
+                        "primary": "#006289",
+                        "surface-container-low": "#e8f2ff",
+                        "error-container": "#fb5151",
+                        "on-secondary-fixed-variant": "#674d00",
+                        "outline-variant": "#8fb1d2",
+                        "on-secondary-fixed": "#443100",
+                        "primary-fixed": "#00baff",
+                        "on-surface": "#08314d",
+                        "on-tertiary": "#c7ffe5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift { transition: background-color 0.3s ease; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close up portrait of a smiling young mother with soft cinematic lighting and pastel blue background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCK0CBtEJLAB2ZawEI_QnstLMos6YnfkM6pUU_L0OC75R9NTHTPkMMISY1ptMUEACkNMrrKG_AYHmWmKUPihLtq2W0FcCXlQdnZpM6GeXexwvi2s2u_n5pT5l20JtFCwQBOeYnzabD41gP-x-4fKXo84KJ4aVyQRCdIE4Y8Vw8LKuLZeqtN8lrK2N0p93EfYXou0Uo0yybe8pqDm9bEqyp5UN-kIfetB4Sh4zc27BXErZzT7alLrdYWj-Js5S4OWN7DfFo51Z_18I"/>
+</div>
+<h1 class="font-plus-jakarta-sans text-lg font-bold text-sky-500 dark:text-sky-400">Pengaturan</h1>
+</div>
+<div class="flex items-center gap-3">
+<button class="p-2 text-slate-400 hover:opacity-80 active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto">
+<!-- Profile Anchor -->
+<section class="mb-10">
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-[0_8px_30px_rgba(0,98,137,0.04)] flex items-center gap-6">
+<div class="relative">
+<div class="w-20 h-20 rounded-xl bg-primary-container overflow-hidden ring-4 ring-white shadow-lg">
+<img class="w-full h-full object-cover" data-alt="friendly illustrated avatar of a woman with a warm smile and blue scarf on a soft yellow background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAElb_vDgy0iic8wXXYZbhBRD73BCKfhqtGiHhGZH44vVBlSz6UmCztnGWRj-2DTY9gSKz8CcSnPh_k8loA4BY4-njVxQeQtFgRBMecK6938eWzxrXo8l2G8lEA_duBi1yE2gpJTpz5KZ6vV5Os-aT6gc1Ph36hjb08WES0T93fnO_O5wNDmSRT5_CQQEdfV9N3Wvmsl-ofLOnwTijKxMzCZ4zmB82HgdDKrqsl8b6_mqdcHGtzOkfYNtok06X7785gpA8aNwUHUU4"/>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-secondary text-white p-1.5 rounded-full shadow-md">
+<span class="material-symbols-outlined text-sm" data-icon="edit">edit</span>
+</div>
+</div>
+<div>
+<h2 class="text-xl font-extrabold tracking-tight text-on-surface">Bunda Maria</h2>
+<p class="text-on-surface-variant text-sm font-medium">Administrator Keluarga</p>
+</div>
+</div>
+</section>
+<!-- Main Settings Group -->
+<div class="space-y-6">
+<!-- Preferences Section -->
+<section>
+<h3 class="text-xs font-black uppercase tracking-[0.2em] text-on-surface-variant/60 mb-4 ml-2">Preferensi Umum</h3>
+<div class="bg-surface-container-low rounded-lg overflow-hidden">
+<!-- Toggle Row 1 -->
+<div class="flex items-center justify-between p-5 bg-white/40 border-b border-white/20">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="notifications_active">notifications_active</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Notifikasi Real-time</p>
+<p class="text-xs text-on-surface-variant">Update instan lokasi anggota</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-14 h-8 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Toggle Row 2 -->
+<div class="flex items-center justify-between p-5 bg-white/40">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="dark_mode">dark_mode</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Mode Gelap</p>
+<p class="text-xs text-on-surface-variant">Kurangi kelelahan mata</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-14 h-8 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</section>
+<!-- Security Section -->
+<section>
+<h3 class="text-xs font-black uppercase tracking-[0.2em] text-on-surface-variant/60 mb-4 ml-2">Keamanan &amp; Privasi</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-white p-5 rounded-lg shadow-sm border-l-4 border-tertiary flex flex-col gap-3 group hover:bg-tertiary-container/10 transition-colors">
+<span class="material-symbols-outlined text-tertiary" data-icon="shield">shield</span>
+<div>
+<p class="font-bold text-on-surface leading-tight">Berbagi Lokasi Akurat</p>
+<p class="text-xs text-on-surface-variant mt-1">Hanya aktif untuk anggota terpilih</p>
+</div>
+</div>
+<div class="bg-white p-5 rounded-lg shadow-sm border-l-4 border-secondary flex flex-col gap-3 group hover:bg-secondary-container/10 transition-colors">
+<span class="material-symbols-outlined text-secondary" data-icon="history">history</span>
+<div>
+<p class="font-bold text-on-surface leading-tight">Riwayat Perjalanan</p>
+<p class="text-xs text-on-surface-variant mt-1">Simpan data selama 30 hari</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Language Section -->
+<section>
+<div class="bg-surface-container-highest/30 rounded-lg p-5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary" data-icon="language">language</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Bahasa Aplikasi</p>
+<p class="text-xs text-on-surface-variant">Saat ini: Bahasa Indonesia</p>
+</div>
+</div>
+<button class="bg-white px-4 py-2 rounded-full text-xs font-bold text-primary shadow-sm hover:bg-primary hover:text-white transition-all">Ubah</button>
+</div>
+</section>
+<!-- About Section -->
+<section class="pb-10">
+<div class="bg-white rounded-lg p-6 text-center space-y-4 border border-outline-variant/10">
+<h4 class="font-black text-sky-600 tracking-tighter text-xl italic">Lagi Dimana</h4>
+<p class="text-sm text-on-surface-variant px-4">Kami percaya keamanan keluarga adalah hak dasar setiap orang. Versi 2.4.1 (Build 890)</p>
+<div class="flex justify-center gap-6 pt-2">
+<a class="text-xs font-bold text-primary hover:underline" href="#">Ketentuan Layanan</a>
+<a class="text-xs font-bold text-primary hover:underline" href="#">Kebijakan Privasi</a>
+</div>
+<button class="w-full mt-4 bg-error/10 text-error py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-error hover:text-white transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+                        Keluar Akun
+                    </button>
+</div>
+</section>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl rounded-t-[3rem] z-50 shadow-[0_-8px_30px_rgba(0,0,0,0.04)] tonal-shift border-t border-sky-100/20">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Peta</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Anggota</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-sky-400" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Riwayat</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-sky-100 dark:bg-sky-900/40 text-sky-700 dark:text-sky-300 rounded-[2rem] px-5 py-2 scale-110 active:scale-90 transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-plus-jakarta-sans text-[10px] font-semibold">Profil</span>
+</a>
+</nav>
+</body></html>
+
+<!-- Pengaturan Aplikasi -->
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Onboarding - Lagi Dimana</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#d8eaff",
+                    "primary-container": "#00baff",
+                    "on-tertiary-fixed-variant": "#296e56",
+                    "primary-dim": "#005578",
+                    "on-secondary-container": "#5b4400",
+                    "error": "#b31b25",
+                    "secondary-fixed": "#f9cc61",
+                    "on-error": "#ffefee",
+                    "on-tertiary-container": "#1c644c",
+                    "on-tertiary-fixed": "#00513b",
+                    "error-dim": "#9f0519",
+                    "surface-variant": "#c2e0ff",
+                    "inverse-surface": "#000f1d",
+                    "tertiary-fixed": "#b6fddd",
+                    "tertiary-dim": "#0e5b43",
+                    "tertiary-container": "#b6fddd",
+                    "on-primary-fixed-variant": "#003c55",
+                    "secondary-fixed-dim": "#eabe55",
+                    "surface-container-highest": "#c2e0ff",
+                    "on-primary": "#e8f4ff",
+                    "surface-container-high": "#cde5ff",
+                    "tertiary-fixed-dim": "#a8eecf",
+                    "secondary": "#745700",
+                    "on-primary-container": "#003248",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#570008",
+                    "on-background": "#08314d",
+                    "surface-dim": "#b2d8ff",
+                    "surface-tint": "#006289",
+                    "surface": "#f2f7ff",
+                    "secondary-container": "#f9cc61",
+                    "inverse-primary": "#00baff",
+                    "background": "#f2f7ff",
+                    "primary-fixed-dim": "#00abeb",
+                    "inverse-on-surface": "#7fa0c1",
+                    "surface-bright": "#f2f7ff",
+                    "tertiary": "#20674f",
+                    "on-secondary": "#fff1da",
+                    "on-primary-fixed": "#001723",
+                    "outline": "#587a99",
+                    "secondary-dim": "#664c00",
+                    "on-surface-variant": "#3d5f7c",
+                    "primary": "#006289",
+                    "surface-container-low": "#e8f2ff",
+                    "error-container": "#fb5151",
+                    "on-secondary-fixed-variant": "#674d00",
+                    "outline-variant": "#8fb1d2",
+                    "on-secondary-fixed": "#443100",
+                    "primary-fixed": "#00baff",
+                    "on-surface": "#08314d",
+                    "on-tertiary": "#c7ffe5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col overflow-x-hidden">
+<!-- Hero Illustration Section -->
+<section class="relative w-full h-[530px] flex items-center justify-center pt-12">
+<!-- Abstract Background Shapes for Playful Feel -->
+<div class="absolute top-[-10%] right-[-10%] w-72 h-72 bg-secondary-container opacity-20 rounded-full blur-3xl"></div>
+<div class="absolute bottom-[10%] left-[-15%] w-80 h-80 bg-primary-container opacity-10 rounded-full blur-3xl"></div>
+<!-- Main Illustration with Bento-style Framing -->
+<div class="relative z-10 w-full max-w-md px-6 h-full flex items-center justify-center">
+<div class="relative group w-full aspect-[4/5] rounded-xl overflow-hidden shadow-none transform transition-transform">
+<img alt="Keluarga bahagia di taman" class="w-full h-full object-cover rounded-xl" data-alt="A warm, vibrant digital illustration of a happy family including parents and young children playing on a sunny day in a lush green park with soft trees and colorful flowers in a playful, storybook style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxQR7QvVOBql8Pb2_gUxZDvoR0Xx_up7K8IxWTbcVmr-IDAM_er4xYoDu9vzNXtqSYpR8fFm-Mw7iIOVWl2VLeQeGmZ8F-Btl3dSh_4RCToE78zM7tbXpNkSUvx2aK2HryZRoPrTZ3VsNNpRDjfYFzrwqJWxYOzGXU9qtDjGmev5ImaAj8BXF2D8RLbe0GQRRQ5zYgy_EQHHq8-fZ1cj9lKv-Dd_w3j7IOAx_lAHCPky3K4KW9LF1d6iYq-1YGqopi9QTbBbbNnEw"/>
+<!-- Floating Pulse Effect for Real-time Marker -->
+<div class="absolute top-1/4 right-1/4 flex items-center justify-center">
+<div class="absolute w-12 h-12 bg-primary-container/40 rounded-full animate-ping"></div>
+<div class="relative w-8 h-8 bg-primary rounded-full border-4 border-white flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-white text-xs" style="font-variation-settings: 'FILL' 1;">person</span>
+</div>
+</div>
+<div class="absolute bottom-1/3 left-1/4 flex items-center justify-center">
+<div class="absolute w-10 h-10 bg-secondary-container/50 rounded-full animate-pulse"></div>
+<div class="relative w-6 h-6 bg-secondary rounded-full border-2 border-white shadow-md"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Content & Action Canvas -->
+<main class="flex-grow flex flex-col px-8 pb-12 pt-4 relative">
+<div class="max-w-md mx-auto w-full flex flex-col items-center text-center">
+<!-- Branding Text (Static Anchor) -->
+<h1 class="font-headline text-3xl font-extrabold text-primary tracking-tight mb-4">
+                Lagi Dimana
+            </h1>
+<!-- Feature Headline -->
+<h2 class="font-headline text-2xl font-bold text-on-surface leading-tight mb-3">
+                Pantau Langkah Mereka Secara Real-Time
+            </h2>
+<!-- Supporting Copy -->
+<p class="text-on-surface-variant text-lg leading-relaxed mb-10 max-w-[280px]">
+                Ketenangan hati ada dalam genggaman. Pantau lokasi keluarga Anda kapan pun, di mana pun.
+            </p>
+<!-- Onboarding Progress Dots -->
+<div class="flex gap-2 mb-10">
+<div class="w-8 h-2 bg-primary rounded-full"></div>
+<div class="w-2 h-2 bg-outline-variant rounded-full"></div>
+<div class="w-2 h-2 bg-outline-variant rounded-full"></div>
+</div>
+<!-- Interaction Area -->
+<div class="w-full space-y-4">
+<button class="w-full py-5 bg-primary text-on-primary font-bold text-lg rounded-xl shadow-[0_20px_40px_rgba(0,98,137,0.15)] active:scale-95 transition-all duration-300">
+                    Lanjutkan
+                </button>
+<button class="w-full py-4 text-on-surface-variant font-semibold text-base hover:text-primary transition-colors">
+                    Lewati
+                </button>
+</div>
+</div>
+<!-- Decorative "High-End" Element -->
+<div class="mt-auto pt-8 flex justify-center">
+<div class="glass-card px-4 py-2 rounded-full border border-white/20 flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-sm" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">Terlindungi &amp; Aman</span>
+</div>
+</div>
+</main>
+</body></html>
+
+<!-- Onboarding: Lacak Lokasi -->
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Onboarding - Lagi Dimana</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#d8eaff",
+                    "primary-container": "#00baff",
+                    "on-tertiary-fixed-variant": "#296e56",
+                    "primary-dim": "#005578",
+                    "on-secondary-container": "#5b4400",
+                    "error": "#b31b25",
+                    "secondary-fixed": "#f9cc61",
+                    "on-error": "#ffefee",
+                    "on-tertiary-container": "#1c644c",
+                    "on-tertiary-fixed": "#00513b",
+                    "error-dim": "#9f0519",
+                    "surface-variant": "#c2e0ff",
+                    "inverse-surface": "#000f1d",
+                    "tertiary-fixed": "#b6fddd",
+                    "tertiary-dim": "#0e5b43",
+                    "tertiary-container": "#b6fddd",
+                    "on-primary-fixed-variant": "#003c55",
+                    "secondary-fixed-dim": "#eabe55",
+                    "surface-container-highest": "#c2e0ff",
+                    "on-primary": "#e8f4ff",
+                    "surface-container-high": "#cde5ff",
+                    "tertiary-fixed-dim": "#a8eecf",
+                    "secondary": "#745700",
+                    "on-primary-container": "#003248",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#570008",
+                    "on-background": "#08314d",
+                    "surface-dim": "#b2d8ff",
+                    "surface-tint": "#006289",
+                    "surface": "#f2f7ff",
+                    "secondary-container": "#f9cc61",
+                    "inverse-primary": "#00baff",
+                    "background": "#f2f7ff",
+                    "primary-fixed-dim": "#00abeb",
+                    "inverse-on-surface": "#7fa0c1",
+                    "surface-bright": "#f2f7ff",
+                    "tertiary": "#20674f",
+                    "on-secondary": "#fff1da",
+                    "on-primary-fixed": "#001723",
+                    "outline": "#587a99",
+                    "secondary-dim": "#664c00",
+                    "on-surface-variant": "#3d5f7c",
+                    "primary": "#006289",
+                    "surface-container-low": "#e8f2ff",
+                    "error-container": "#fb5151",
+                    "on-secondary-fixed-variant": "#674d00",
+                    "outline-variant": "#8fb1d2",
+                    "on-secondary-fixed": "#443100",
+                    "primary-fixed": "#00baff",
+                    "on-surface": "#08314d",
+                    "on-tertiary": "#c7ffe5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col overflow-x-hidden">
+<!-- Hero Illustration Section -->
+<div class="relative w-full h-[486px] flex items-center justify-center overflow-hidden">
+<!-- Abstract Decorative Shapes (The Playful Guardian Aesthetic) -->
+<div class="absolute top-[-10%] left-[-10%] w-64 h-64 bg-secondary-container rounded-full opacity-20 blur-3xl"></div>
+<div class="absolute bottom-[-5%] right-[-10%] w-80 h-80 bg-primary-container rounded-full opacity-20 blur-3xl"></div>
+<div class="relative z-10 w-full max-w-md px-8 h-full flex items-end justify-center">
+<img alt="A happy child walking safely in a park while holding a smartwatch, with a glowing digital line connecting them to their parent's smiling face in a floating circle above." class="w-full h-auto object-contain max-h-[90%]" data-alt="A happy child walking safely in a park while holding a smartwatch, with a glowing digital line connecting them to their parent's smiling face in a floating circle above." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAldPA5ghqRDxZ24tpQuMk8LdzdxZtnOwDjovBDwKM6OeHUA8fUxhr0wOYnFgoOnmlVTZdXn2rXbBGtLLiODtGy7nkocFo1f8r5r6KF9_0OATaAC5OBJV3B1rd757XSRbLe50cMA21ZlDWVzz9p9fWCm1vbrJnpwC_JZ5PwDAftM3NaH5jC3Z8-Y_p4U6B4N2PLVt6jkrT4NeaW9l0LPNk868znQWlz9_AvuKkXaMZNabIJ4e_BdWMlZGBET3o3RB4LAcQNdcFzZTw"/>
+</div>
+</div>
+<!-- Content Canvas -->
+<main class="flex-grow flex flex-col px-8 pb-12 items-center text-center -mt-8 relative z-20">
+<!-- Floating Chat & SOS Indicators (Bento-style layout) -->
+<div class="grid grid-cols-2 gap-4 w-full max-w-sm mb-10">
+<div class="glass-panel p-5 rounded-lg flex flex-col items-center gap-3 shadow-sm">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+</div>
+<span class="text-sm font-bold text-primary">Chat Keluarga</span>
+</div>
+<div class="glass-panel p-5 rounded-lg flex flex-col items-center gap-3 shadow-sm">
+<div class="w-12 h-12 bg-error-container text-on-error rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="sos" style="font-variation-settings: 'FILL' 1;">sos</span>
+</div>
+<span class="text-sm font-bold text-error">Tombol SOS</span>
+</div>
+</div>
+<!-- Typography Hierarchy -->
+<h1 class="text-3xl font-extrabold text-on-background tracking-tight mb-4">
+            Selalu Terhubung, <br/> <span class="text-primary">Tanpa Rasa Khawatir</span>
+</h1>
+<p class="text-on-surface-variant text-base leading-relaxed mb-12 max-w-xs">
+            Kirim pesan suara instan atau tekan tombol SOS saat butuh bantuan. Kami menjaga anak Anda tetap dalam jangkauan hangat keluarga.
+        </p>
+<!-- Progress Indicator -->
+<div class="flex gap-2 mb-12">
+<div class="w-2 h-2 rounded-full bg-surface-container-highest"></div>
+<div class="w-8 h-2 rounded-full bg-primary"></div>
+</div>
+<!-- Primary Action (Tactile Softness Button) -->
+<div class="w-full max-w-sm mt-auto">
+<button class="group w-full bg-primary text-on-primary py-5 px-8 rounded-xl font-bold text-lg shadow-lg hover:shadow-primary/20 transition-all active:scale-95 flex items-center justify-center gap-3">
+                Mulai Sekarang
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="mt-6 text-on-surface-variant font-semibold text-sm hover:text-primary transition-colors">
+                Lewati untuk sekarang
+            </button>
+</div>
+</main>
+<!-- Visual Texture Overlay -->
+<div class="fixed inset-0 pointer-events-none opacity-[0.03] contrast-150 grayscale" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB8b-_XbvebfwuWlZkqfEvrhmhig8YXe5UH_b76BeIFvuw4uXVMjPJq621nwNFjrQo3Cm0I8i_GbBEtFNe63Dxua2GrjZ780wBHn3JM45Q4zJEOWNBxrOgvU8eKTcXboKEsYPQfadXr7u_1Ck44JgiY48Y1_dFBTcJ-JbH-TpHv2SkzdNROKZwgySjest5mo2-cdHs2erOm1AFUC0TU_2lALnp19XrdyUc8rzr0_DfQyg6_p5i2xTGi-itJJtr2NY5qxukjO5TFkNY');"></div>
+</body></html>
