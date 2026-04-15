@@ -1,6 +1,5 @@
 import * as Location from 'expo-location';
-import { doc, updateDoc, serverTimestamp, collection, addDoc } from 'firebase/firestore';
-import { db } from './firebase';
+import { supabase } from './supabase';
 
 export async function requestLocationPermission(): Promise<boolean> {
   const { status } = await Location.requestForegroundPermissionsAsync();
@@ -14,7 +13,7 @@ export async function getCurrentLocation() {
   return location;
 }
 
-export async function updateUserLocation(userId: string, familyGroupId: string) {
+export async function updateUserLocation(userId: string) {
   try {
     const granted = await requestLocationPermission();
     if (!granted) return null;
@@ -22,16 +21,19 @@ export async function updateUserLocation(userId: string, familyGroupId: string) 
     const location = await getCurrentLocation();
     const { latitude, longitude } = location.coords;
 
-    await updateDoc(doc(db, 'users', userId), {
-      location: { latitude, longitude },
-      lastSeen: serverTimestamp(),
-      isOnline: true,
-    });
+    await supabase
+      .from('users')
+      .update({
+        location: { latitude, longitude },
+        last_seen: new Date().toISOString(),
+        is_online: true,
+      })
+      .eq('id', userId);
 
-    await addDoc(collection(db, 'locationHistory', userId, 'points'), {
+    await supabase.from('location_history').insert({
+      user_id: userId,
       latitude,
       longitude,
-      timestamp: serverTimestamp(),
     });
 
     return { latitude, longitude };
@@ -42,6 +44,5 @@ export async function updateUserLocation(userId: string, familyGroupId: string) 
 }
 
 export function getGoogleMapsStaticUrl(lat: number, lng: number, zoom = 15, size = '400x300') {
-  const apiKey = process.env.EXPO_PUBLIC_GOOGLE_MAPS_API_KEY;
-  return `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&zoom=${zoom}&size=${size}&markers=color:blue%7C${lat},${lng}&key=${apiKey}`;
+  return `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&zoom=${zoom}&size=${size}&markers=color:blue%7C${lat},${lng}`;
 }
